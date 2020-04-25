@@ -1,0 +1,265 @@
+html {
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  background: #ececec;
+}
+body > div:first-of-type {
+  height: 100%;
+}
+#__next {
+  height: 100%;
+}
+#__next > div:nth-child(1) {
+  height: 100%;
+}
+.more-login {
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 40%;
+}
+.more {
+  margin: auto 0;
+  text-align: center;
+}
+
+.more > div {
+  width: 1rem;
+  height: 1rem;
+  background-color: #108ee9;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.footer {
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+}
+.am-list-footer {
+  padding: 0;
+}
+.more .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.more .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.row_ant_color {
+  background-color: #f1f1f1 !important;
+}
+.taskinfo_state_icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.state_0 {
+  color: #fc3132;
+}
+.state_1 {
+  color: #1cae22;
+}
+.state_2 {
+  color: #fd8321;
+}
+.state_3 {
+  color: #108ee9;
+}
+.state_4 {
+  color: #487ffb;
+}
+.today {
+  color: #fd8321 !important;
+}
+.bread_box {
+  width: 100%;
+  height: auto;
+  margin: 0.4rem 0 0 0;
+  box-shadow: 0px -3px 5px #dddddd;
+  background: #fff;
+  padding: 0.4rem 0 0.2rem 0 !important;
+  flex: 0 0 auto;
+}
+.ant_number {
+  font-size: 12px;
+  display: inline-block;
+  color: #7265e6;
+  margin-right: 0.2rem;
+  padding: 1px 5px;
+  background: #e4e2fa;
+  border-color: #e4e2fa;
+  border-radius: 4px;
+}
+.termination {
+  text-decoration: line-through;
+}
+@-webkit-keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+.am-popup {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.tag-colour-purple {
+  margin-right: 0.1rem;
+  color: #7265e6;
+  background: #e4e2fa;
+  border-color: #e4e2fa;
+}
+.tag-colour-cyan {
+  margin-right: 0.1rem;
+  color: #00a2ae;
+  background: #cfedf0;
+  border-color: #cfedf0;
+}
+.tag-colour-orange {
+  margin-right: 0.1rem;
+  color: #f56a00;
+  background: #fde3cf;
+  border-color: #fde3cf;
+}
+.tag-colour-green {
+  margin-right: 0.1rem;
+  color: #00a854;
+  background: #cfefdf;
+  border-color: #cfefdf;
+}
+.tag-colour-blue {
+  margin-right: 0.1rem;
+  color: #108ee9;
+  background: #d2eafb;
+  border-color: #d2eafb;
+}
+.errormain {
+  height: 100%;
+  padding-top: 50%;
+}
+.error-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+/**  等待条 */
+
+.lodign_strip {
+  display: inline-block;
+  margin: 5px 2% 0 0;
+  height: 1rem;
+  border-radius: 2px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(207, 216, 220, 0.2)),
+    color-stop(rgba(207, 216, 220, 0.4)),
+    to(rgba(207, 216, 220, 0.2))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(207, 216, 220, 0.2),
+    rgba(207, 216, 220, 0.4),
+    rgba(207, 216, 220, 0.2)
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(207, 216, 220, 0.2),
+    rgba(207, 216, 220, 0.4),
+    rgba(207, 216, 220, 0.2)
+  );
+  -webkit-animation: card-loading 1.4s ease infinite;
+  animation: card-loading 1.4s ease infinite;
+  background-size: 600% 600%;
+}
+@-webkit-keyframes card-loading {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes card-loading {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.float-right {
+  float: right !important;
+}
+
+html:not([data-scale]) .am-tab-bar-bar::before {
+  background-color: #adadad;
+}
+
+/*弹出层*/
+.am-modal-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.am-modal-alert-content,
+.am-modal-propmt-content {
+  font-size: 13px;
+}
+
+.am-modal-input {
+  height: 30px;
+}
+
+.am-modal-input input {
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+.am-modal-button-group-h .am-modal-button {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}

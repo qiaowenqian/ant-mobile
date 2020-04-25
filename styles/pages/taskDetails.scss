@@ -1,0 +1,791 @@
+.taskDetails {
+  position: inherit;
+  display: flex;
+  flex-flow: column nowrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  .logLogo {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    background: #5c6bc0;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dateNew {
+    color: #cdcdd1;
+    font-size: 12px;
+    height: 30px;
+    float: right;
+  }
+  .logText {
+    display: inline-block;
+  }
+  .bread {
+    width: 100%;
+    height: auto;
+    color: #61caf6;
+    background: #fff;
+    padding: 10px;
+    flex: 0 0 auto;
+    .bo {
+      height: 25px;
+      float: left;
+      line-height: 25px;
+    }
+    svg {
+      margin: 4px 2px 0 2px;
+    }
+    span {
+      line-height: 25px;
+    }
+  }
+  .from {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin: 10px 10px 53px 10px;
+    .pubDiv {
+      display: flex;
+      margin: 0 0 5px 0;
+      position: relative;
+      align-items: center;
+      overflow: hidden;
+      .stateNo {
+        background: #e3f2f7;
+        color: #666;
+        font-size: 12px;
+        padding: 0 3px;
+        width: auto;
+        height: 15px;
+        line-height: 15px;
+        flex: 0 0 auto;
+        border-radius: 3px;
+        margin: 5px 5px 0 0;
+        align-self: flex-start;
+      }
+      .stateStyle {
+        position: absolute;
+        width: 110px;
+        height: 35px;
+        transform: rotate(-45deg);
+        top: 4px;
+        left: -35px;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        line-height: 25px;
+        .state {
+          color: #fff !important;
+        }
+      }
+      .icon {
+        flex: 0 0 auto;
+        color: #c7c7cc;
+        width: 20px;
+        height: 20px;
+        margin: 2.5px 10px 0 0;
+      }
+      .i {
+        margin: 2.5px 0 0 0;
+      }
+      .tit {
+        flex: 0 0 auto;
+        color: #c7c7cc;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+      }
+      .timePicker {
+        width: 50px;
+        background: #fff;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        z-index: 30;
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          li {
+            color: #666;
+            font-size: 12px;
+            margin: 5px 0;
+            line-height: 15px;
+            border-radius: 3px;
+          }
+          li:active {
+            background: #c7c7cc;
+          }
+          .blueColor {
+            background: #c7c7c7;
+            color: #fff;
+          }
+        }
+      }
+      .text {
+        flex: 1;
+        height: 25px;
+        line-height: 25px;
+        text-align: right;
+        color: #666;
+        font-size: 12px;
+        padding: 0 0 0 15px;
+        display: flex;
+        justify-content: flex-end;
+        .timeBox {
+          display: flex;
+          align-items: center;
+          .dateTime {
+            position: relative;
+            z-index: 45;
+            display: flex;
+            align-items: center;
+            span {
+              padding: 0 0 0 10px;
+              display: inline-block;
+            }
+            .am-icon-md {
+              width: 20px;
+              height: 20px;
+              color: #cfcfd4;
+              margin: 0 4px 0 8px;
+            }
+          }
+        }
+        .dateTimeBox {
+          position: absolute;
+          right: 0;
+          display: flex;
+          //   width: 188px;
+          margin-right: 10px;
+          .dateBox {
+            position: relative;
+          }
+          .timeBox {
+            position: relative;
+            // right: -30px;
+          }
+          .datepacker {
+            opacity: 0;
+          }
+        }
+        .datepater {
+          opacity: 0;
+        }
+        svg {
+          float: right;
+        }
+        .editable {
+          display: inline-block;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .am-input-item {
+          height: 25px;
+          min-height: 25px;
+          .am-list-line {
+            padding: 0;
+            input {
+              width: 100%;
+              text-align: right;
+              font-size: 14px;
+              padding: 0;
+            }
+          }
+          .am-input-control {
+            font-size: inherit;
+          }
+        }
+      }
+      .talkNum {
+        flex: 1;
+        height: 25px;
+        line-height: 25px;
+        text-align: left;
+        color: #666;
+        font-size: 12px;
+        position: relative;
+        .daily {
+          position: absolute;
+          right: 5px;
+        }
+      }
+      .proName {
+        width: auto;
+        background: #f8f8f8;
+        color: #525252;
+        border-radius: 5px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        padding: 0 7px;
+        display: inline-block;
+      }
+      .tag {
+        border-radius: 5px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        padding: 0 5px;
+        display: inline-block;
+        margin: 0 5px 3px 0;
+        width: 75px;
+        text-align: center;
+        border: 1px solid;
+      }
+      .collect {
+        .collectIcon {
+          color: #fbbe07;
+        }
+      }
+      .divInput {
+        padding: 5px 0 0 10px;
+        word-break: break-all;
+        color: #666;
+      }
+      .input {
+        flex: 1;
+        .am-list-item {
+          height: 30px;
+          min-height: 30px;
+          background: none;
+          input {
+            font-size: 14px;
+            color: #666;
+            font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-break: normal;
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            padding: 0;
+          }
+          input::-webkit-input-placeholder {
+            color: #c7c7cc;
+            height: 30px;
+            line-height: 30px;
+          }
+        }
+      }
+      .taskName {
+        height: 35px;
+        font-size: 14px;
+        color: #666;
+        font-weight: 600;
+        margin: 0 0 0 15px;
+        line-height: 35px;
+        flex: 1;
+      }
+      .textCount {
+        flex: 0 0 auto;
+        height: 25px;
+        line-height: 25px;
+        color: #c7c7cc;
+        padding: 0 0 0 10px;
+        align-self: flex-end;
+        span {
+          color: #fc4142;
+        }
+      }
+      .descBox {
+        color: #666;
+        font-size: 14px;
+        line-height: 16px;
+        min-height: 70px;
+        img {
+          display: none;
+        }
+      }
+      .descBox::-webkit-input-placeholder {
+        color: #c7c7cc;
+      }
+      .am-switch .checkbox {
+        height: 20px;
+        width: 40px;
+      }
+      .am-switch .checkbox:after {
+        width: 18px;
+      }
+      .am-switch .checkbox:after,
+      .am-switch .checkbox:before {
+        left: 1px;
+        top: 0.5px;
+        height: 18px;
+      }
+      .am-switch .checkbox:before {
+        width: 38px;
+      }
+      .am-textarea-control {
+        -ms-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        textarea {
+          font-size: 14px;
+        }
+      }
+    }
+    .desc {
+      display: inherit;
+      .descTextCount {
+        padding: 5px 0 0 0;
+        /*添加按钮 样式*/
+        .am-image-picker {
+          width: 115px;
+          float: left;
+          .am-image-picker-list {
+            padding: 0;
+            margin: 0;
+            .am-flexbox {
+              margin: 0;
+            }
+          }
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+          color: #c7c7cc;
+        }
+        .textCount {
+          flex: inherit;
+          float: right;
+        }
+      }
+      .am-textarea-control {
+        min-height: 70px;
+      }
+    }
+    .cont {
+      display: inherit;
+      .top {
+        width: 100%;
+        height: 25px;
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      .load_loading {
+        height: auto;
+        position: inherit;
+        min-height: 40px;
+      }
+      .taskList {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 12px 0 0 0;
+        li {
+          background: #f8f8f8;
+          border-radius: 5px;
+          height: 40px;
+          line-height: 40px;
+          color: #6a6a6a;
+          padding: 0 15px;
+          font-size: 13px;
+          display: flex;
+          margin: 0 0 5px 0;
+          .name {
+            flex: 1;
+          }
+          .type {
+            color: #5ec9f6;
+          }
+          .state {
+            flex: 0 0 60px;
+          }
+          .qxColor {
+            color: #54f882;
+          }
+          .user,
+          .type {
+            flex: 0 0 auto;
+          }
+          .user {
+            margin: 5px 15px 0 15px;
+            flex: 0 0 auto;
+          }
+          .down,
+          .del {
+            width: 16px;
+            height: 16px;
+            margin: 12px 0 0 10px;
+          }
+          .del {
+            color: #fc6161;
+          }
+        }
+      }
+      .add {
+        text-align: right;
+        color: #c7c7cc;
+        padding: 5px 5px 0 0;
+        font-size: 12px;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .addshow {
+        text-align: left;
+        color: #c7c7cc;
+        padding: 5px 0 0 0;
+        font-size: 12px;
+        display: flex;
+        .cuiban {
+          flex: 0 0 auto;
+          margin-top: 10px;
+          padding: 0 10px;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+          flex: 0 0 auto;
+        }
+        span {
+          text-align: right;
+          display: inline-block;
+          flex: 1;
+          margin-top: 10px;
+        }
+      }
+    }
+    .log {
+      .user,
+      .date {
+        flex: 0 0 auto;
+      }
+      .logCont {
+        flex: 1;
+        color: #878787;
+        font-size: 13px;
+        padding: 0 0 0 10px;
+        line-height: 30px;
+        // height: 30px;
+      }
+      .date {
+        color: #cdcdd1;
+        font-size: 12px;
+        line-height: 30px;
+        height: 30px;
+      }
+      .users {
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+        text-align: center;
+        background: #5c6bc0;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    }
+    .talk {
+      display: inherit;
+      .top {
+        width: 100%;
+        display: flex;
+        height: 30px;
+        line-height: 30px;
+        .user,
+        .date {
+          flex: 0 0 auto;
+        }
+        .user {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .date {
+          color: #cdcdd1;
+          font-size: 12px;
+          position: relative;
+        }
+        .name {
+          flex: 1;
+          color: #878787;
+          font-size: 13px;
+          padding: 0 10px;
+        }
+      }
+      .center {
+        color: #6c6c6c;
+        font-size: 14px;
+        padding: 10px 15px;
+        line-height: 15px;
+        img {
+          max-width: 30% !important;
+          display: block;
+          margin: 10px 0;
+        }
+      }
+      .centerLog {
+        color: #6c6c6c;
+        font-size: 14px;
+        line-height: 15px;
+        width: 240px;
+        position: relative;
+        top: -16px;
+        left: 16px;
+      }
+      .bottom {
+        text-align: right;
+        padding: 0 15px;
+        .fileName {
+          display: inline-block;
+          border: 1px solid #eee;
+          padding: 10px 15px;
+          border-radius: 3px;
+          font-size: 12px;
+          max-width: 100%;
+          margin: 0 0 3px 0;
+          svg {
+            width: 12px;
+            height: 12px;
+            color: #1296db;
+            margin: 1px 7px 0 0;
+            float: left;
+          }
+        }
+        img {
+          display: block;
+          margin: 0 0 10px 0;
+          max-width: 50%;
+        }
+        .back,
+        .del {
+          width: 16px;
+          height: 16px;
+          margin: 0 0 0 10px;
+          color: #c7c7cc;
+        }
+        .del {
+          color: #fc6161;
+        }
+      }
+    }
+  }
+  .twoButs {
+    z-index: 1;
+    .but {
+      color: #5ec9f6;
+      line-height: 43px;
+      padding: 3px 0 0 0 !important;
+    }
+    .blue {
+      background: #5ec9f6;
+      color: #fff;
+    }
+  }
+  .buts {
+    height: 48px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    .but {
+      flex: 1;
+      text-align: center;
+      padding: 8px 0 0 0;
+      svg {
+        width: 17px;
+        height: 17px;
+        color: #1296db;
+      }
+      p {
+        color: #5e5e5e;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+  .pushTalk {
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .talkFrom {
+      background: #f8f8f8;
+      border-radius: 5px;
+      position: absolute;
+      max-height: 500px;
+      height: auto;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      padding: 15px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      ul {
+        width: 100%;
+        li {
+          font-size: 13px;
+          color: #797d89;
+          display: flex;
+          background: #eee;
+          border-radius: 5px;
+          margin: 7px 0 0 0;
+          padding: 7px 15px;
+          svg {
+            width: 15px;
+            float: left;
+            flex: 0 0 auto;
+          }
+          span {
+            flex: 1;
+            padding: 5px 10px;
+          }
+          .del {
+            color: #fc6161;
+          }
+        }
+      }
+      .pubDiv {
+        height: 130px;
+        display: flex;
+        flex-flow: column nowrap;
+        .text {
+          flex: 1;
+        }
+        .p {
+          height: 30px;
+          line-height: 30px;
+          font-size: 12px;
+          text-align: right;
+          border-top: 1px solid #eee;
+          svg {
+            color: #ccc;
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin: 7px 0 0 0;
+          }
+          span {
+            color: #ff0000;
+          }
+        }
+      }
+      .am-button {
+        width: auto;
+        display: inline-block;
+        padding: 0 20px;
+        margin: 10px 0 0 15px;
+        float: right;
+      }
+    }
+  }
+
+  .alertModal {
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal {
+      width: 80%;
+      height: auto;
+      background: #fff;
+      border-radius: 5px;
+      .tit {
+        font-size: 15px;
+        color: #000;
+        height: 40px;
+        line-height: 45px;
+        text-align: center;
+      }
+      p {
+        padding: 15px;
+        color: #4a4949;
+      }
+      .am-list-item {
+        border: 1px solid #eeeeef;
+        height: 45px;
+        line-height: 45px;
+        color: #a9acb0;
+        font-size: 13px;
+        margin: 5px 15px 15px 15px;
+        border-radius: 5px;
+        padding: 0 10px;
+        .am-list-line {
+          padding: 0;
+          input {
+            color: #a9acb0;
+            font-size: 13px;
+          }
+        }
+      }
+      .am-button {
+        font-size: 13px;
+        margin: 0 15px 10px 15px;
+        border: 0;
+        box-shadow: none;
+        height: 40px;
+        line-height: 40px;
+      }
+      .am-button:before {
+        border: 0;
+      }
+      .am-button-primary {
+        background: #5ec9f6;
+      }
+      .am-textarea-control textarea {
+        font-size: 12px;
+      }
+    }
+  }
+}
+html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line:after {
+  height: 0;
+}
+.am-list-extra {
+  display: none;
+}
+.am-list-item .am-list-line .am-list-content,
+.am-list-item .am-list-line .am-list-extrat {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.am-list-item .am-list-line {
+  padding: 0;
+}
+.am-list-item {
+  padding-left: 0;
+}
+.listStyle {
+  top: -10px;
+}
+.forbiddenCopy {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}

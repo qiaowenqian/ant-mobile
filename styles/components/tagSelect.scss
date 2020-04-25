@@ -1,0 +1,58 @@
+.tagSelect{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    z-index: 1000;
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 2px -1px 7px #b1b1b1;
+    .close{
+        position: absolute;
+        right: -30px;
+        top: 9px;
+        width: 30px;
+        height: 30px;
+        z-index: 1010;
+        background: #fff;
+        box-shadow: 3px 1px 5px #ccc;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 4px 0 0 0;
+    }
+    .tit{
+        margin: 0 0 5px 0;
+        font-weight: bold;
+        border-bottom: 1px solid #eee;
+        padding: 0 0 10px 0;
+        flex: 0 0 auto;
+    }
+    .pubDiv{
+        margin: 0 0 1px 0;
+        color: #fff;        
+    }
+    .tagBox{
+        overflow-x: hidden;        
+        overflow-y: auto;
+        flex: 1;        
+    }
+    ul{        
+        font-size: 12px;
+        .listName{
+            color: #a5a4af;
+            font-size: 12px;
+            padding: 10px 0 3px 0;
+        }
+        li{
+            line-height: 18px;
+            svg{
+                float: right;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}

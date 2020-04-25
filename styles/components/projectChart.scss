@@ -1,0 +1,103 @@
+.projectChart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  .chartBox {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    .chart_title {
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #eee;
+      color: #666;
+      padding: 0 10px;
+      font-size: 13px;
+    }
+    .chartBox {
+      height: 250px;
+      position: relative;
+      display: flex;
+    }
+    .chartBox2 {
+      height: 250px;
+      position: relative;
+      display: flex;
+      padding-top: 5px;
+    }
+    .chart {
+      height: 100%;
+      padding: 15px 10px;
+      flex: 1;
+    }
+    .taskDesc {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px 10px 15px 0;
+      .li {
+        display: flex;
+        padding: 0 0 5px 0;
+        .round {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          flex: 0 0 auto;
+          margin-right: 5px;
+        }
+        .charType {
+          flex: 0 0 80px;
+          font-size: 12px;
+          color: #666;
+        }
+        .baifenbi {
+          flex: 0 0 60px;
+          font-size: 12px;
+          color: #666;
+        }
+      }
+    }
+    .chart_search {
+      padding: 0 10px;
+      .search {
+        width: 100%;
+        border: 1px solid #eee;
+        margin: 10px 0;
+        display: flex;
+        .date {
+          flex: 1;
+          text-align: center;
+          position: relative;
+          > div {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            span {
+              float: none !important;
+            }
+          }
+          .defaultTxt {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 48px;
+            color: #b3b5ba;
+            display: inline-block;
+          }
+        }
+        .icon {
+          line-height: 45px;
+          flex: 0 0 auto;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}

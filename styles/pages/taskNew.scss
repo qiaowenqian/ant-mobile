@@ -1,0 +1,833 @@
+.layout {
+  width: 100%;
+  height: 100%;
+}
+.createTask {
+  position: fixed;
+  right: 12px;
+  bottom: 62px;
+  z-index: 100;
+  width: 34px;
+  height: 34px;
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+.task {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 51px;
+  nav {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgba(245, 245, 245, 1);
+    display: flex;
+    .menuLeft {
+      flex: 2;
+    }
+    .choose {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: 12px;
+        margin-right: 5px;
+      }
+      svg {
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .menuTitle {
+    width: 100%;
+    height: 100%;
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      li {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+          color: #424242;
+          font-size: 12px;
+          text-align: center;
+        }
+        .pColor {
+          color: #1e88e5 !important;
+        }
+        .menuLine {
+          width: 22px;
+          height: 2px;
+          background: #1e88e5;
+          position: absolute;
+          bottom: -1px;
+        }
+        .child {
+          font-size: 10px;
+          color: #757575;
+          padding: 5px 15px;
+          // margin-left: 12px;
+          // background: whitesmoke;
+          border-radius: 2px;
+          // width: 100%;
+        }
+        .childMenu {
+          background: rgba(100, 181, 246, 1);
+          color: #fff;
+          border-radius: 10px;
+        }
+      }
+      li:last-child {
+        .child {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .topState {
+    height: 40px;
+    border-bottom: 1px solid rgba(245, 245, 245, 1);
+  }
+  .content {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .longMenu {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: #ccc;
+      z-index: 500;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        border-bottom: 1px solid #fafafa;
+        .taskName {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          padding: 10px 0 0 10px;
+          font {
+            flex: 0 0 auto;
+            background: whitesmoke;
+            color: #757575;
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 4px;
+          }
+          span {
+            flex: 1;
+            font-size: 14px;
+            color: #505050;
+            padding-left: 10px;
+          }
+          em {
+            flex: 0 0 auto;
+            font-style: normal;
+            font-size: 8px;
+            background: #dbdbdb;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            .stateStyle {
+              transform: scale(1);
+              border-top-left-radius: 8px;
+              border-bottom-left-radius: 8px;
+              padding: 2px 5px 2px 10px;
+            }
+          }
+        }
+        .taskTimeList {
+          display: flex;
+          padding: 0 10px 10px 10px;
+          .taskSmall {
+            flex: 1;
+            .createPerson {
+              display: inline-block;
+              margin-right: 15px;
+              margin-bottom: 10px;
+            }
+            .responsePerson {
+              display: inline-block;
+              margin-right: 15px;
+              margin-bottom: 10px;
+            }
+            p {
+              display: inline-block;
+              margin-right: 15px;
+              margin-bottom: 10px;
+            }
+            .proName {
+              width: 100%;
+              margin-bottom: 10px;
+            }
+            .myProName {
+              // display: inline-block;
+            }
+            .taskTitle {
+            }
+            strong {
+              font-weight: normal;
+              font-size: 8px;
+              color: #bdbdbd;
+              border: 1px solid #bdbdbd;
+              border-radius: 50%;
+              width: 14px;
+              height: 14px;
+              display: inline-block;
+              b {
+                font-weight: normal;
+                transform: scale(0.75);
+                font-size: 12px;
+                display: inline-block;
+                line-height: 14px;
+                margin-top: -3px;
+              }
+            }
+          }
+          .taskChildSmall {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            .collect {
+              flex: 0 0 auto;
+              p {
+                text-align: right;
+                .start {
+                  color: rgba(255, 204, 128, 1);
+                }
+              }
+            }
+            .numBox {
+              flex: 1;
+              display: flex;
+              align-items: flex-end;
+              em {
+                font-style: normal;
+                flex: 0 0 auto;
+                margin-right: 15px;
+              }
+              font {
+                flex: 0 0 auto;
+              }
+            }
+          }
+          .iconCenter {
+            display: flex;
+            align-items: center;
+            span {
+              i {
+                font-style: normal;
+                padding-right: 8px;
+              }
+            }
+          }
+          svg {
+            font-size: 14px;
+            width: 14px;
+            height: 14px;
+            color: #bdbdbd;
+          }
+          span {
+            font-size: 10px;
+            color: #bdbdbd;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .loading {
+    text-align: center;
+    font-size: 12px;
+    color: #a9b5b9;
+    height: 40px;
+    line-height: 40px;
+    .load_loading {
+      position: inherit;
+      display: inline-block;
+      width: auto;
+      height: 20px;
+      min-height: 20px;
+      background: none;
+      margin: 1px 10px 0 0;
+    }
+  }
+}
+.menuBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.taskSel {
+  margin-top: 80px;
+  .am-drawer-sidebar {
+    z-index: 101;
+  }
+  .am-drawer-overlay {
+    z-index: 100;
+  }
+  .taskSelect {
+    background: #fff;
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .taskSelTop {
+      flex: 0 0 auto;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      ul {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        li {
+          position: relative;
+          margin-right: 20px;
+          p {
+            font-size: 12px;
+            color: #bdbdbd;
+          }
+          .pColor {
+            color: #64b5f6;
+          }
+          span {
+            height: 2px;
+            width: 10px;
+            background: #64b5f6;
+            display: inherit;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            margin-left: -5px;
+          }
+        }
+      }
+      > span {
+        svg {
+          font-size: 12px;
+          color: #bdbdbd;
+        }
+      }
+    }
+    .taskSelContent {
+      flex: 1;
+      overflow-x: hidden;
+      overflow-y: auto;
+      .sortBox {
+        padding: 0 10px;
+        ul {
+          border-bottom: 1px solid #eee;
+          padding-top: 10px;
+          li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            svg {
+              width: 16px;
+              height: 16px;
+              font-size: 16px;
+              color: #bdbdbd;
+            }
+            span {
+              padding-left: 10px;
+              font-size: 14px;
+              color: #424242;
+            }
+          }
+        }
+        p {
+          padding-top: 16px;
+          display: flex;
+          align-items: center;
+          svg {
+            width: 16px;
+            height: 16px;
+            font-size: 16px;
+            color: #1e88e5;
+          }
+          span {
+            padding-left: 10px;
+            font-size: 14px;
+            color: #1e88e5;
+          }
+        }
+      }
+      .selectBox {
+        .taskSelChild {
+          position: absolute;
+          top: 0;
+          bottom: 100%;
+          .am-drawer-sidebar {
+            left: 0;
+          }
+          .taskChooseContent {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            p {
+              flex: 0 0 40px;
+              line-height: 40px;
+              color: rgba(66, 66, 66, 1);
+              font-size: 12px;
+              padding: 0 15px;
+              border-bottom: 1px solid rgba(245, 245, 245, 1);
+            }
+            .project {
+              flex: 1;
+              .projectSelect {
+                position: absolute;
+                top: 40px;
+                .am-search {
+                  background: rgba(245, 245, 245, 1);
+                  padding: 6px 8px;
+                  .am-search-input {
+                    background: #fff;
+                  }
+                }
+                .list li span {
+                  font-size: 12px;
+                  color: rgba(117, 117, 117, 1);
+                }
+                .list li .projectColor {
+                  color: rgba(100, 181, 246, 1);
+                }
+                .list li svg {
+                  width: 18px;
+                  height: 18px;
+                  color: rgba(100, 181, 246, 1);
+                }
+                .list .p {
+                  border: none;
+                  text-align: center;
+                  display: inherit;
+                  font-size: 12px;
+                  color: #c7c7cc;
+                  padding: 15px 0 0 0;
+                  height: 0;
+                  line-height: 0;
+                }
+              }
+            }
+            .tag {
+              flex: 1;
+              .tagSelect {
+                position: absolute;
+                top: 41px;
+              }
+              .tagSelect .label .labelBox .title h3 {
+                padding: 0;
+              }
+              .tagSelect .label .labelBox .tagBox ul {
+                padding: 0;
+              }
+              .tagSelect .label .labelBox .tagBox ul li {
+                padding: 8px 8px 0 0;
+              }
+              .tagSelect .label .labelBox .tagBox {
+                padding: 0 7px 0 15px !important;
+              }
+              .tagSelect .label .labelBox .title {
+                height: 20px;
+                line-height: 20px;
+                padding: 0 15px;
+              }
+            }
+            .planDate {
+              flex: 1;
+              background: #fff;
+              padding: 0 0 0 15px;
+              position: absolute;
+              top: 41px;
+              left: 0;
+              right: 0;
+              bottom: 0;
+            }
+            .taskFlow {
+              flex: 1;
+              background: #fff;
+              padding: 0 0 0 15px;
+              position: absolute;
+              top: 41px;
+              left: 0;
+              right: 0;
+              bottom: 0;
+            }
+            .taskWork {
+              flex: 1;
+              background: #fff;
+              padding: 0 0 0 15px;
+              position: absolute;
+              top: 41px;
+              left: 0;
+              right: 0;
+              bottom: 0;
+            }
+            ul {
+              li {
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                color: rgba(80, 80, 80, 1);
+                padding-right: 15px;
+                border-bottom: 1px solid rgba(245, 245, 245, 1);
+                display: flex;
+                align-items: center;
+                position: relative;
+                span {
+                  flex: 1;
+                }
+                svg {
+                  color: rgba(100, 181, 246, 1);
+                  position: absolute;
+                  right: 15px;
+                }
+                .am-icon-md {
+                  width: 18px;
+                  height: 18px;
+                }
+              }
+              .lColor {
+                color: rgba(100, 181, 246, 1);
+              }
+            }
+            .chooseDateBox {
+              padding-right: 15px;
+              .chooseBox {
+                padding-left: 0;
+                border: none;
+                font-size: 12px;
+                color: rgba(66, 66, 66, 1);
+                font {
+                  padding-right: 8px;
+                }
+                span {
+                  i {
+                    font-style: normal;
+                  }
+                  em {
+                    padding: 0 5px;
+                  }
+                }
+              }
+              .start {
+                padding-left: 0;
+                border: none;
+                height: 30px;
+                line-height: 30px;
+                display: flex;
+                font {
+                  font-size: 12px;
+                  color: rgba(66, 66, 66, 1);
+                  padding: 0 24px 0 13px;
+                }
+                span {
+                  flex: 1;
+                  color: rgba(117, 117, 117, 1);
+                  border: 1px solid rgba(245, 245, 245, 1);
+                  border-radius: 2px;
+                  padding-left: 5px;
+                  position: relative;
+                  input {
+                    border: none;
+                    height: 25px;
+                    font-size: 12px;
+                    color: rgba(117, 117, 117, 1);
+                  }
+                  .am-list-item.am-input-item {
+                    height: 100%;
+                  }
+                  .am-list-item {
+                    min-height: 100%;
+                  }
+                  .am-list-item .am-input-control {
+                    font-size: 12px;
+                  }
+                  .am-list-item .am-input-control input {
+                    font-size: 12px;
+                    color: rgba(117, 117, 117, 1);
+                  }
+                }
+              }
+              .end {
+                padding-left: 0;
+                border: none;
+                height: 30px;
+                line-height: 30px;
+                margin-top: 12px;
+                display: flex;
+
+                font {
+                  font-size: 12px;
+                  color: rgba(66, 66, 66, 1);
+                  padding: 0 24px 0 13px;
+                }
+                span {
+                  flex: 1;
+                  color: rgba(117, 117, 117, 1);
+                  border: 1px solid rgba(245, 245, 245, 1);
+                  border-radius: 2px;
+                  padding-left: 5px;
+                  position: relative;
+                  input {
+                    border: none;
+                    height: 25px;
+                    font-size: 12px;
+                    color: rgba(117, 117, 117, 1);
+                  }
+                  .am-list-item.am-input-item {
+                    height: 100%;
+                    font-size: 12px;
+                    color: rgba(117, 117, 117, 1);
+                  }
+                  .am-list-item {
+                    min-height: 100%;
+                  }
+                  .am-list-item .am-input-control {
+                    font-size: 12px;
+                  }
+                  .am-list-item .am-input-control input {
+                    font-size: 12px;
+                    color: rgba(117, 117, 117, 1);
+                  }
+                }
+              }
+              .dateBox {
+                position: absolute;
+                top: 0;
+                left: 5px;
+                right: 0;
+                div {
+                  color: transparent;
+                }
+              }
+            }
+            .buttonBox {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              font-size: 14px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center;
+              display: flex;
+              .back {
+                flex: 1;
+                color: rgba(66, 66, 66, 1);
+                background: rgba(250, 250, 250, 1);
+              }
+              .ok {
+                flex: 1;
+                color: #fff;
+                background: rgba(100, 181, 246, 1);
+              }
+            }
+          }
+        }
+        .taskSelChildHeight {
+          bottom: 0;
+        }
+        .projectBox {
+          padding: 8px 10px 0px 10px !important;
+          ul {
+            padding-left: 15px;
+            li {
+              height: 30px;
+              background: rgba(250, 250, 250, 1);
+              color: rgba(117, 117, 117, 1);
+              font-size: 12px;
+              margin-bottom: 10px;
+              border-radius: 2px;
+              line-height: 30px;
+            }
+          }
+        }
+        .tagBox {
+          padding: 15px 2px 0px 10px !important;
+          ul {
+            padding-left: 15px;
+            .tag {
+              display: inline-block;
+              width: 33.33%;
+              padding-right: 8px;
+              margin-bottom: 5px;
+              span {
+                border: 1px solid;
+                border-radius: 2px;
+                padding: 3px 0;
+                display: inline-block;
+                width: 100%;
+                font-size: 12px;
+                text-align: center;
+              }
+            }
+            .null {
+              padding-right: 10px;
+            }
+          }
+        }
+        .userBox {
+          .userResponseBox {
+            padding-left: 15px;
+            .response {
+              width: 70px;
+              border-radius: 12px;
+              display: flex;
+              background: #fafafa;
+              .photo {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: #5c6bc0;
+                overflow: hidden;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+                span {
+                  font-size: 12px;
+                  line-height: 24px;
+                  display: inline-block;
+                  transform: scale(0.8);
+                  color: #fff;
+                }
+              }
+              font {
+                font-size: 12px;
+                line-height: 24px;
+                display: inline-block;
+                text-align: center;
+                padding-left: 3px;
+              }
+            }
+          }
+        }
+        .endTimeBox {
+          .timeBox {
+            padding-left: 15px;
+          }
+        }
+        .taskFlowBox {
+          .flowBox {
+            padding-left: 15px;
+          }
+        }
+        .workTimeBox {
+          .workBox {
+            padding-left: 15px;
+          }
+        }
+        .selBox {
+          padding: 15px 10px 0px 10px;
+          h3 {
+            font-size: 14px;
+            color: #424242;
+            font-weight: normal;
+            margin-bottom: 10px;
+            span {
+              padding-left: 10px;
+              svg {
+                width: 12px;
+                height: 12px;
+                color: #bdbdbd;
+              }
+            }
+          }
+          .null {
+            color: rgba(189, 189, 189, 1);
+            border-bottom: 1px solid rgba(238, 238, 238, 1);
+            background: #fff;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            height: 30px;
+            line-height: 30px;
+            span {
+              flex: 1;
+            }
+            svg {
+              width: 18px;
+              height: 18px;
+            }
+          }
+          .dateBox {
+            border-bottom: 1px solid rgba(238, 238, 238, 1);
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            color: rgba(66, 66, 66, 1);
+            display: flex;
+            align-items: center;
+            .date {
+              flex: 1;
+              .dateStart {
+              }
+              .line {
+                padding: 0 10px;
+              }
+              .dateEnd {
+              }
+            }
+          }
+          .close {
+            flex: 0 0 auto;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            position: relative;
+            background: rgba(189, 189, 189, 1);
+            svg {
+              width: 14px;
+              height: 14px;
+              color: #fff;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              margin-top: -7px;
+              margin-left: -7px;
+            }
+          }
+        }
+      }
+    }
+    .taskSelClear {
+      flex: 0 0 auto;
+      height: 30px;
+      line-height: 30px;
+      display: flex;
+      padding: 0 10px;
+      .clearSel {
+        flex: 1;
+        color: #64b5f6;
+      }
+      p {
+        flex: 0 0 auto;
+        font-size: 12px;
+        color: #bdbdbd;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+
+.alert{
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    .alertBox{
+        width: 75%;
+        height: auto;
+        background: #fff;
+        border-radius: 2px;
+        .textLimit{
+            font-size: 12px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .textLimit1{
+            margin-bottom: 0px;
+            font-size: 12px;
+            text-align: justify;
+        }
+        .title{
+            color: #1E88E5;
+            font-size: 16px;
+            padding: 0px 8px 0px 16px;
+        }
+        .colse{
+            float: right;
+            margin: 10px 10px 0 0;
+            color: #bdbdbd;
+        }
+        .topName{
+            border-bottom: 1px solid #f5f5f5;
+            padding-bottom: 16px;
+            margin-top: 16px;
+        }
+        div{
+            span{
+                color: #BDBDBD;
+                font-size: 12px;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: #424242;
+            text-align: justify;
+            margin-top: 10px;
+            padding: 0 16px 0 16px;
+            line-height: 20px;
+            b{
+                color: rgba(255, 167, 38, 1);
+                margin:  0 2px;
+            }
+            .basicsText{
+                color: #424242;
+                border: none;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+            .freeText{
+                border: none;
+                line-height: 20px;
+                color: #424242;       
+            }
+            .majorText{
+                border: none;
+                color: #424242; 
+                line-height: 20px;
+                margin-top: 10px;
+            }
+        }
+        .butOne{
+            background-color:#3297fa;
+            color: #ffffff;
+            width: 80px;
+            font-size: 14px;
+            padding: 5px 0;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            text-align: center;
+            float: right;
+            margin-right: 16px;
+            margin-top: 30px;
+        }
+        .butTwo{
+            padding: 0;
+            font-size: 14px;
+            float: right;
+            margin-right: 10px;
+            margin-top: 30px;
+            margin-bottom: 6px;
+            .but1{
+                background-color:#3297fa;
+                color: #ffffff;
+                width: 80px;
+                font-size: 14px;
+                display: inline-block;
+                padding: 5px 0;
+                margin-bottom: 10px;
+                border-radius: 4px;
+                text-align: center;
+                margin-right: 10px;
+            }
+            .but2{
+                color: #bdbdbd;
+                width: 100px;
+                font-size: 14px;
+                padding: 5px 0;
+                display: inline-block;
+                margin-bottom: 10px;
+                border-radius: 4px;
+                text-align: center;
+            }
+        }
+    }
+}

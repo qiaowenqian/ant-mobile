@@ -1,0 +1,267 @@
+.add-taskinfo{
+    margin-bottom: 0.5rem;
+    .question{
+        width:35px;
+        height:35px;
+        background:#108ee9;
+        text-align: center;
+        border-radius: 50%;
+        position:fixed;
+        right:20px;
+        bottom:230px;
+        color:#fff;
+        font-weight:600;
+        font:bold 16px/35px "微软雅黑";
+    }
+        .bread{
+            background: #fff;
+            margin: 10px 0 0 0;
+            padding: 0 10px;
+            .crumbs_box{
+                display: flex;
+                .icon{
+                    flex: 0 0 auto;
+                    svg{
+                        width: 20px !important;
+                        height: 18px !important;
+                        float: left;
+                    }
+                }
+                .textDiv{
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 13px;
+                    flex:1;
+                    line-height: 20px;
+                }
+            }                        
+        }
+        .wire{
+            background: #fff;
+            padding: 0 15px;
+            display: flex;
+            border-bottom: 1px solid #eee;
+            min-height: 44px;
+            .title{
+                flex: 0 0 auto;
+                font-size:16px;
+            }
+            .action{
+                flex: 1;
+                .am-list-line{
+                    padding: 0;
+                }
+                input{
+                    padding: 0;
+                    text-align: right;
+                }
+            }
+            label{
+                flex: 0 0 auto;
+                padding: 0 0 0 3px;
+                color: #ADADAD;
+            }
+            .type{
+                flex: 1;
+                text-align: right;
+            }
+        }
+        .tag_box{
+            padding: 7px 0 7px 0;
+            background: #fff;
+            margin: 10px 0 0 0;
+            .tag{
+                color: #fff;
+                font-size:12px;
+                float: left;
+                margin:0 5px 3px 0;
+            }
+            .svgAdd{
+                width:25px;
+                height: 25px;
+                color: #969696;
+                float: left;
+            }
+            .add{
+                text-align: center;
+                color: #1c8dd9;
+                font-size: 16px;
+                width: 93px;
+                margin: auto;
+                height: 23px;
+                line-height: 23px;
+                svg{
+                    float: left;
+                    margin: 0 5px 0 0;
+                }
+            }
+        }
+          .list{
+               background-color: #ffffff;               
+               .am-list-item{
+                   width: 100%;
+                   padding: 0;
+                   .am-textarea-control{
+                       padding: 10px 15px;
+                       textarea{
+                           font-size: 15px;
+                       }
+                   }
+               }
+               .input_box{
+                    .taskDesc{
+                        color: #b9b9b9;
+                        padding: 0 10px 7px 10px;
+                    }
+                    .am-list-line{
+                        width: 100%;
+                        padding: 0 15px;
+                        input{
+                            padding: 0;
+                            font-size: 16px;
+                            height: 44px;
+                            line-height: 44px;
+                        }
+                    }
+                    .file_up{
+                        padding: 10px 15px;
+                        .file_add{
+                            margin-right: 1rem;
+                            display: inline-block;
+                            svg{
+                                width: 2.5rem;
+                                height: 2.5rem;
+                            }
+                        }
+                    }
+               }
+               .buttom_box{
+                    padding: 15px 10px;
+                    border-top: 1px solid #eee;
+                    border-bottom: 1px solid #eee;
+                   .buttom{
+                        color: #0789E1;
+                   }
+                   .user{
+                        flex: 1;
+                        text-align: right;
+                        
+                   }
+                   .mar-r-30{
+                       margin-right: 30px;
+                   }
+                   .user_box{
+                        display: inline-block;
+                        color: #0789E1;
+                        font-size: 13px;
+                        position: relative;
+                        line-height: 14px;
+                        float: right;
+                        margin: 0 0 0 10px;
+                        svg{
+                            vertical-align: middle;
+                            width: 14px;
+                            height: 14px;
+                            margin-right: 3px;
+                            float: left;
+                        }
+                        >.user_box{
+                            display: inline-block;
+                            margin: 0 2px 0 0 !important;
+                            float: left;
+                        }
+                        >.close{
+                           display: inline-block;
+                           float: right;
+                           svg{
+                            vertical-align: middle;
+                            width: 1.2rem;
+                            height: 1.2rem;
+                            margin-right: 0.4rem;
+                           }
+                        }
+                }
+               }
+               .property{
+                   .title{
+                   }
+                   .action{
+                        flex: 1;
+                        text-align: right;
+                        line-height: 23px;
+                        .am-list-line{
+                            width: 90%;
+                        }
+                        input{
+                            text-align: right;
+                        }
+                        >.am-icon{
+                            float: right;
+                            width: 15px;
+                            height: 15px;
+                            margin: 0 5px 0 0;
+                        }
+                        >span{
+                            float: right;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            word-break: normal;
+                            display: block;
+                            max-width: 54px;
+                        }
+                        >.photo{
+                            float: right;
+                            width: 23px;
+                            height: 23px;
+                            line-height: 23px;
+                            color: #fff;
+                            background: #108ee9;
+                            border-radius: 50%;
+                            margin: 0 5px 0 0;
+                            font-size: 12px;
+                            text-align: center;
+                            overflow: hidden;
+                        }
+                   }
+                   label{
+                        .am-icon{
+                            width: 12px;
+                            height: 12px;
+                            float: right;
+                            margin: 0 0 0 10px;
+                        }
+                   }
+               }
+               .lineTop{
+                   border-top:1px solid #eee;
+               }
+               .coefficienttype{
+                    padding: 1rem 1rem;
+                    font-size: 16px;
+                    .type{
+                        flex: 1;
+                        text-align: right;
+                    }
+               }
+          }
+        .button-box{
+            margin: 10px 0 0 0;
+            padding: 10px 15px 6px;
+            background-color: #ffffff;
+            .button-right{
+                    float: right;
+            }
+            a{
+                display:inline-block;
+                width:52px;
+                height:28px;
+                span{
+                    display:block;
+                    margin-left:-3px;
+                }
+            }
+        }
+}

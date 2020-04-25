@@ -1,0 +1,44 @@
+.setIcon {
+  position: fixed;
+  top: 12px;
+  right: 10px;
+  z-index: 5;
+  width: 20px;
+  height: 20px;
+  color: #9fa7ad;
+}
+.projectDetails {
+  .createTask {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    z-index: 300;
+    width: 34px;
+    height: 34px;
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  .am-tabs-pane-wrap {
+    position: relative;
+  }
+  .am-tabs-pane-wrap > div {
+    // position: absolute;
+    // padding: 10px 10px 0 10px;
+    // top:0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+  }
+  .am-tabs-tab-bar-wrap {
+    padding: 0 50px 0 0;
+    background: #fff;
+  }
+  .am-tabs-default-bar-tab:after {
+    background-color: #fff !important;
+  }
+}

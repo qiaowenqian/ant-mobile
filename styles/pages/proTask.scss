@@ -1,0 +1,370 @@
+//任务列表样式
+.proTask{
+    top:50px !important;
+    left:0 !important;
+    right:0 !important ;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    h3{
+        font-weight:normal;
+        flex: 0 0 40px;
+        line-height:40px;
+        padding:0 15px;
+        background:#fff;
+        font-size:12px;
+        color:#666;
+        margin-bottom:10px;
+        width:100%;
+        svg{
+            width:20px;
+            height:20px;
+            color:#61caf6;
+            position:relative;
+            top:6px;
+        }
+    }
+    .taskListBox{
+        flex:1;
+        overflow-y:auto;
+        margin:0 10px;
+        -webkit-overflow-scrolling: touch;
+        .taskList{
+            width:100%;
+            background:#fff;
+            border-radius:5px;
+            display: flex;
+            margin-bottom:10px;
+            position:relative;
+            overflow:hidden;
+            padding:15px 15px 15px 20px;
+            .stateStyle{
+                position: absolute;
+                width: 70px;
+                height: 10px;
+                transform: rotate(-45deg);
+                top: 7px;
+                left: -22px;
+                line-height:10px;
+                text-align: center;
+                .state{
+                    color:#fff !important;
+                    font-size:12px;
+                    transform: scale(0.6);
+                    display:block;
+                }
+            }   
+            .taskCon{
+                flex:1;
+                display: flex;
+                flex-direction:column;
+                position:relative;
+                .top{
+                    flex:1;
+                    display: flex;
+                    span{
+                        padding:0 3px;
+                        text-align: center;
+                        background:#e3f2f7;
+                        line-height:20px;
+                        height:20px;
+                        text-align: center;
+                        border-radius:3px;
+                        color:#666;
+                    }
+                    p{
+                        flex: 1;
+                        font-size:14px;
+                        color:#666;
+                        width:240px;
+                        line-height:20px;
+                        margin-left:10px;
+                    }   
+                }
+                .middle{
+                    flex:1;
+                    display:flex;
+                    font-size:12px;
+                    color:#c7c7cc;
+                    width:100%;
+                    margin:10px 0 0 0;
+                    line-height:20px;
+                    height:20px;
+                    .person{
+                        flex:0 0 auto;
+                        text-align: center;
+                        padding:0 15px 0 0;
+                    }
+                    .time{
+                        flex:0 0 auto;
+                        text-align: center;
+                        height:30px;
+                        padding:0 15px 0 0;
+                        overflow:hidden;
+                    }
+                    .child{
+                        flex:0 0 auto;
+                        text-align: center;
+                        padding:0 15px 0 0;
+                        i{
+                            font-style: normal;
+                        }
+                    }
+                    .info{
+                        flex:0 0 auto;
+                        padding:0 15px 0 0;
+                        text-align: center;
+                    }
+                    svg{
+                        width:13px;
+                        height:13px;
+                        margin-right:5px;
+                        box-sizing: border-box;
+                    }
+                }
+                .bottom{
+                    flex:1;
+                    display:flex;
+                    box-sizing: border-box;
+                    .tag{
+                        flex:1;
+                        max-width:80px;
+                        text-align: center;
+                        background:#efeff4;
+                        margin-right:10px;
+                        box-sizing: border-box;
+                        font-size:12px;
+                        border-radius:5px;
+                        line-height:20px;
+                    }
+                }
+            }
+            .taskChild{
+                flex:0 0 60px;
+                text-align:center;
+                line-height:50px;
+                color:#c7c7cc;
+                font-size:24px;
+            }
+        }
+    }
+}
+.p{
+    text-align: center;
+    font-size: 12px;
+    color: #a9b5b9;
+    height: 20px;
+    line-height: 20px;
+    .load_loading{
+        position:inherit;
+        display: inline-block;
+        width: auto;
+        height: 20px;
+        min-height: 20px;
+        background: none;
+        margin: 1px 10px 0 0;
+    }
+}
+.bread{
+    width: 100%;
+    color: #61caf6;
+    height:auto;
+    background:transparent;
+    line-height: 20px;
+    padding: 0 10px;
+    align-content: center;
+    margin:0 0 10px 0;
+    span{
+        color:#61caf6;
+    }
+    svg{
+        margin:2px 2px 0 2px;
+        width: 18px;
+        height: 18px;
+        line-height:20px;
+        color:#999;
+    }
+}
+.pubLayout .topBar{
+    position: absolute;
+    top:0;
+    height:40px;
+    z-index:2;
+    width:100%;
+}
+//文件列表样式
+.fileContent{
+    top:50px !important;
+    display:flex;
+    flex-direction: column;
+    .fileListBox{
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        width:100%;
+    }
+    .fileBox{
+        .file{
+            background:#fff;
+            border-radius:5px;
+            display: flex;
+            padding:10px 15px;
+            margin:0 0 10px 0;
+            svg{
+                color:#1296db;
+                font-weight:800;
+            }
+            >div{
+                color:#666;
+                font-size:13px;
+                padding:5px 5px 0 8px;
+            }
+            .proName{
+                flex:1;
+            }
+            .fileNum{
+                flex:0 0 auto;
+                padding:5px 0 0 0;
+                span{
+                    color:#f77575;
+                }
+            }
+        }
+    }
+    .fileText{
+        .paper{
+            background:#fff;
+            border-radius:5px;
+            display: flex;
+            padding:10px 15px;
+            margin:0 0 10px 0;
+            .paperIcon{
+                background:#eee;
+                box-shadow: 1px 1px 1px #ccc;
+                color:#666;
+                font-size:12px;
+                width:30px;
+                height:30px;
+                text-align: center;
+                line-height:27px;
+            }
+            .text{
+                flex:1;
+                padding:9px 0 0 10px;
+                font-size:13px;
+                color:#666;
+            }
+            svg{
+                margin:9px 0 0 0;
+                color:#666;
+            }
+        }
+    }
+}
+//统计样式
+.count{
+    top:50px !important;
+    display:flex;
+    flex-direction: column;
+   .countTop{
+       width:100%;
+       background:#fff;
+       display:flex;
+       flex-direction: column;
+       border-radius: 5px;
+       flex:0 0 auto;
+       .allTask{
+            flex:1;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:10px 0;
+            font{
+                padding:10px 0;
+                color:#666;
+                font-size:14px;
+            }
+            span{
+                color:#666;
+                font-size:14px;
+            }
+       }
+       .nowState{
+           flex:1;
+           display:flex;
+           div{
+               flex:1;
+               display:flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               font{
+                   color:#666;
+                   font-size:14px;
+                   padding:5px 0;
+               }
+               span{
+                   font-size:14px;
+               }
+           }
+       }
+   }
+   .countBottom{
+       width:100%;
+       border-radius: 5px;
+       margin:10px 0 0 0;
+       flex:1;
+       position: relative;
+       .countTitle{
+           background:#cfcfcf;
+           padding:10px 0;
+           display:flex;
+           border-top-left-radius:5px;
+           border-top-right-radius:5px;
+           span{
+               flex:1;
+               display:flex;
+               justify-content: center;
+               align-items: center;
+           }
+       }
+       .countData{
+           overflow-x: hidden;
+           overflow-y: auto;
+           -webkit-overflow-scrolling: touch;
+           width:100%;
+           position: absolute;
+           top:36px;
+           left:0;
+           right:0;
+           bottom:0;
+           .dataContent{
+               border-top:1px solid #cfcfcf;
+               background:#fff;
+               display:flex;
+               span{
+                    flex:1;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding:10px 0;
+                }
+           }
+           .dataContent:last-child{
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+           }
+       }
+       .countData:last-child{
+           border-bottom-left-radius:5px;
+           border-bottom-right-radius:5px;
+       }
+   }
+}
+.pubLayout .topBar{
+    position: absolute;
+    top:0;
+    height:40px;
+    z-index:2;
+    width:100%;
+}

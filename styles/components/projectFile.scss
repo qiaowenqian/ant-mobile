@@ -1,0 +1,73 @@
+.projectFile {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  .am-list-body {
+    background: none;
+    border: none;
+  }
+  .bread {
+    flex: 0 0 auto;
+    background: none;
+    span {
+      max-width: 235px;
+    }
+    label {
+      float: left;
+    }
+  }
+  .list {
+    flex: 1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    .table_tr {
+      margin: 0 0 10px 0;
+      display: flex;
+      svg {
+        flex: 0 0 auto;
+        color: #fece00;
+        width: 25px;
+        height: 25px;
+      }
+      .type {
+        background: #b2e4ff;
+        flex: 0 0 30px;
+        text-align: center;
+        line-height: 25px;
+        color: #fff;
+      }
+      .fileName {
+        flex: 1;
+        height: 25px;
+        line-height: 25px;
+        color: #666;
+        padding: 0 10px;
+        width: 100px;
+        span {
+          background: #ccc;
+          color: #fff;
+          border-radius: 3px;
+          padding: 0 5px;
+          margin: 4px 7px 0 0;
+          float: left;
+          height: 18px;
+          line-height: 18px;
+        }
+      }
+      .count {
+        flex: 0 0 auto;
+        font-size: 12px;
+        line-height: 25px;
+        color: #ccc;
+        span {
+          color: #f30202;
+          margin: 0 3px;
+        }
+      }
+    }
+  }
+}

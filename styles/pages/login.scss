@@ -1,0 +1,31 @@
+.login{
+    height: 100%;
+
+   
+    .icon_box{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        svg{
+           width: 2rem;
+           height:2rem;
+           
+        }
+    }
+    .user_box{
+        .user_login{
+            margin-bottom: .2rem;
+            .headline{
+                display: inline-block;
+                width: 22%;
+            }
+            .content{
+            display: inline-block;
+            width: 78%;
+            }
+        }
+        .user_buttom{
+                margin-top: 1rem;
+        }
+    }
+}

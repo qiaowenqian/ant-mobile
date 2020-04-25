@@ -1,0 +1,56 @@
+.SelectDownList{
+    width: auto;
+    color: #666;
+    line-height: 40px;
+    .val{
+        float: left;
+        font-size: 12px;
+    }
+    .act{
+        color: #15A8E5;
+    }
+    svg{
+        width: 13px;
+        height: 13px;
+        margin: 14px 0 0 4px;
+        float: left;
+    }
+    .seList{
+        position: fixed;
+        height: auto;
+        padding: 0 15px 5px 15px;
+        z-index: 1001;
+        background: #fff;
+        margin: 0;
+        left: 0;
+        right: 0;
+        top: 42px;
+        box-shadow: -1px 2px 8px #c5c8ca;
+        li{
+            height: 45px;
+            line-height: 45px;
+            border-bottom: 1px solid #eee;
+            color: #666666;
+            font-size: 12px;
+            svg{
+                color: #15A8E5;
+                margin: 12px 0 0 0;
+                width: 20px;
+                height: 20px;
+                float: right;
+            }
+        }
+        li:last-child{
+            border: 0;
+        }
+    }    
+}
+.shadowDiv{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    top: 42px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}

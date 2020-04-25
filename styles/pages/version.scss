@@ -1,0 +1,120 @@
+.version{
+    background: #fff;
+    padding: 10px;
+    .imgBox{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 65px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        >h3{
+            text-align: center
+        }
+        .version1{
+            padding:15px;
+            h3{
+                font-size:18px;
+                color:#199fd8;
+                font-weight:bold;
+                border-bottom:1px solid #d9d9d9;
+                padding-bottom:10px;
+            }
+            table{
+                border-collapse:collapse;
+                width:100%;
+                margin-top:10px;
+            }
+            tr{
+                td{
+                    border:1px solid #d9d9d9;
+                    height:30px;
+                    text-align:right;
+                    padding-right:10px;
+                }
+                td:first-child{
+                    text-align:left;
+                    padding-left:10px;
+                }
+
+            }
+            tr:first-child{
+                background:#eee;
+            }
+        }
+        .version2{
+            padding:15px;
+            h3{
+                font-size:18px;
+                color:#199fd8;
+                font-weight:bold;
+                border-bottom:1px solid #d9d9d9;
+                padding-bottom:10px;
+            }
+            table{
+                border-collapse:collapse;
+                width:100%;
+                margin-top:10px;
+            }
+            tr{
+                td{
+                    border:1px solid #d9d9d9;
+                    height:30px;
+                    text-align:center;
+                    padding-right:10px;
+                    color:#199fd8;
+                }
+                td:first-child{
+                    color:#333;
+                }
+            }
+            tr:first-child{
+                background:#eee;
+                td{
+                    color:#333;
+                }
+            }
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+    h3{
+        color: #797979;
+        font-size: 13px;
+        font-weight: lighter;
+        padding: 5px 10px;
+    }
+    .button{
+        background: #5ec9f6;
+        color: #fff;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 16px;
+        margin: 20px 0 0 0;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    .towButton{
+        margin: 20px 0 0 0;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        height: 45px;
+        display: flex;
+        .but{
+            line-height: 45px;
+            text-align: center;
+            font-size: 16px;
+            background: #5ec9f6;
+            color: #fff;
+            flex: 1;
+            margin: 0 10px;
+        }
+    }
+}

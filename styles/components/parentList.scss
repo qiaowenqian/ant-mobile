@@ -1,0 +1,18 @@
+.crumbs_box{
+    padding: 0 15px;
+    color: rgba(0,0,0,.65);
+    .icon{
+        color: #127ECF;
+        margin-right: 0.2rem;
+        white-space: nowrap;
+        vertical-align: middle;
+        display: inline-block;
+        svg{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    .project{
+        font-weight: bolder;
+    }
+}

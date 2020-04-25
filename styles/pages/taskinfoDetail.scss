@@ -1,0 +1,531 @@
+
+.taskinfo_min{    
+    .am-list-body{
+        height: 100%;
+        width: 100%;
+        background-color: #ECECEC;
+    }
+    .question{
+        width:35px;
+        height:35px;
+        background:#108ee9;
+        text-align: center;
+        border-radius: 50%;
+        position:fixed;
+        right:20px;
+        bottom:230px;
+        color:#fff;
+        font-weight:600;
+        font:bold 16px/35px "微软雅黑";
+        z-index: 1;
+    }
+    .input{
+        color: #000;
+        font-size: 17px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        padding: 2px 0;
+        border: 0;
+        background-color: transparent;
+        line-height: 1;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: right;
+    }
+    .box{
+        background-color: #fff;
+        margin-top: 10px;
+        width: 100%;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        box-shadow: 0 0 3px #e2e2e2;
+    }
+    .bread_box{
+        padding:10px 15px!important;
+        .crumbs_box{
+            padding: 0;
+            display: flex;
+            .icon{
+                float: left;
+                flex:0 0 auto;
+                svg{
+                    width: 18px;
+                    height: 20px;   
+                }                
+            }
+            .textDiv{
+                flex: 1;
+                font-size: 13px;
+                padding: 3px 0 0 0;
+                line-height: 16px;
+            }
+        }        
+    }
+    .title_box{
+        .flex_box{
+            border-bottom:1px solid #dad8d8;
+            display: flex;
+            .header{
+                flex: 0 0 auto;
+                color: #333;
+                font-size: 13px;
+            }
+            .content{
+                flex: 1;
+                text-align: right;
+                color: #333;
+                .svg{
+                    width: 14px;
+                    height: 14px;
+                    float: right;
+                    margin: 1px 6px 0 0;
+                }
+                .txt{
+                    float: right;
+                    max-width: 60px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-break: normal;
+                    display: block;
+                }
+                .txt1{
+                    float: right;
+                }
+            }
+            .icon{
+                flex: 0 0 auto;
+            }
+        }
+        >div{
+            padding: 10px 15px;
+        }
+        .title{
+            border-bottom: 1px solid #D9D9D9;
+            .icon{
+                white-space: nowrap;
+                vertical-align: middle;
+                display: inline-block;
+                margin-right: 0.2rem;
+            }
+            .number_box{
+                .icon{
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    display: inline-block;
+                    margin-right: 5px;
+                    height: 100%;
+                    line-height: 100%;
+                }
+                .ant_number{
+                    padding: 5px;
+                    margin: 0 5px 0 0;
+                }
+            }
+            .input_box{
+              display: inline-block;
+              flex: 1;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size:16px;
+              font-weight: bold;
+            }
+            svg{
+                color: #ccc;
+            }
+        }
+        .describe{
+            color: #333;
+            font-size: 13px;
+            line-height: 16px;
+            border-bottom: 1px solid #D9D9D9;
+            display:flex;        
+            .describe_box{
+                word-wrap: break-word;
+                width: 100%;
+                flex: 1;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border:1px solid #ececec;
+                }
+            }
+            .icon{
+                flex:0 0 auto;
+                svg{
+                    width: 18px;
+                    height: 18px;
+                    color:#ccc;
+                }
+            }
+        }
+        .rest{
+            color: #127ECF;
+            height: 40px;
+            .time_box{
+                flex:0 0 auto;  
+                font-size: 13px;
+                svg{
+                    width: 14px;
+                    height: 14px;
+                    float: left;
+                    margin: 0 5px 0 0;
+                }           
+            }
+            .user_box{
+                span{
+                    float: right;
+                    label{
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        overflow: hidden;
+                        max-width: 57px;
+                    }
+                }
+                flex:1;
+                font-size: 13px;
+                svg{
+                    width: 14px;
+                    height: 14px;
+                    margin: 0 3px 0 10px;
+                    float: left;
+                }    
+            }
+            
+        }
+    }
+    .svg{
+        width: 18px;
+        height: 18px;
+    }
+    .tag_box{
+        padding: 8px 15px 5px;
+        .tag{
+            color: #fff;
+            font-size:12px;
+            float: left;
+            margin:0 5px 3px 0;
+        }
+        .svgAdd{
+            width:25px;
+            height: 25px;
+            color: #969696;
+            float: left;
+        }
+        .add{
+            text-align: center;
+            color: #1c8dd9;
+            font-size: 16px;
+            width: 85px;
+            margin: auto;
+            padding: 0 0 4px 0;
+            line-height: 18px;
+            svg{
+                float: left;
+            }
+        }
+    }
+    .am-list-item .am-input-control input{
+        text-align: right;
+    }
+    .propertyHide{
+        margin: 0 0 30px 0 !important;
+        border: 0;                
+        >.am-flexbox,.select{
+            display: none;
+        }
+    }
+    .propertyAnimate{
+        animation:proShow 0.8s forwards;
+    }
+    .propertyShow{
+        height: 118px;
+    }
+    @keyframes proShow
+    {
+        from {height:0;}
+        to {height:118px;}
+    }
+    
+    @-webkit-keyframes proShow /*Safari and Chrome*/
+    {
+        from {height:0;}
+        to {height:118px;}
+    }
+    .property_box{
+        font-size: 14px;
+        margin: 10px 0 30px 0;
+        position: relative;
+        .openIcon{
+            position: absolute;
+            text-align: center;
+            bottom: -28px;
+            left: 0;
+            right: 0;
+            svg{
+                width: 40px;
+                height: 30px;
+                color: #bbbbbb;
+            }
+        }
+        .flex_box{
+            padding: 10px;
+            border-bottom: 1px solid #D9D9D9;
+            .header{
+                flex: 0.5;
+            }
+            .content{
+                flex: 1;
+                text-align: right;
+                span{
+                    margin-left: 5px;
+                    color: #b9b8b8;
+                }
+            }
+            svg{
+                color: #ccc;
+            }
+        }
+        .select{
+            width: 100%;
+            padding: 10px;
+            .select_header{
+                
+            }
+            .buttom{
+                flex: 1;
+                text-align: right;
+                svg{
+                    color: #ccc;
+                }
+            }   
+        }
+    }
+    .am-tabs{
+        .am-tabs-default-bar-content{
+            padding: 0 15px;
+            .am-tabs-default-bar-tab{
+                padding: 0;
+                font-size: 13px;
+                height: 40px;
+                width: auto !important;
+                margin: 0 25px 0 0;
+                .am-badge-text{
+                    top: -10px;
+                    right: -19px;    
+                }
+            }
+            .am-tabs-default-bar-tab::after{
+                height: 0;
+            }
+            .am-tabs-default-bar-underline{
+                display: none;
+            }
+            .am-tabs-default-bar-tab-active{
+                border-bottom:2px solid #108ee9 !important;
+            }
+        }
+    }
+    .tabs_box{
+        background-color: #fff;
+        .line{
+            padding: 10px 15px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            .user{
+                background: #7fc7b9;
+                color: #fff;
+                width: 1.8rem;
+                height: 1.8rem;
+                line-height: 1.6rem;
+                -webkit-text-align: center;
+                text-align: center;
+                font-size: 12px;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 7px 0 0;
+                flex:0 0 auto;
+            }            
+            .count_box{
+                padding: 0;
+                flex: 1;
+                color: #000;
+                font-size: 16px;
+                width: 100%;
+                >span{
+                    color: #A5A5A5;
+                    font-size: 12px;
+                    display: inline-block;
+                    padding: 5px 0 0 0;
+                    margin: 0 10px 0 0;
+                    svg{
+                        width: 14px;
+                        height: 13px;
+                        float: left;
+                        margin: 0 2px 0 0;
+                    }
+                }
+                .count{
+                    line-height: 17px;
+                }
+               .leave{
+                    margin: 0;
+                    font-size: 14px;
+                    p{
+                        padding: 0;
+                        margin: 0;
+                    }
+               }
+               .fileLi{
+                   display: flex;
+                   width: 100%;
+                   .lef{
+                       flex: 0 0 auto;
+                       img{
+                            height: 2rem;
+                            width: 1.8rem;
+                       }
+                       svg{
+                        width: 2rem;
+                        height: 2rem;
+                       }
+                   }
+                   .rig{
+                       flex:1;
+                       padding: 2px 0 0 10px;
+                       .to{
+                           width: 100%;
+                           float: left;
+                           .text{
+                               flex:1;
+                               padding: 0;
+                               >.span{
+                                    max-width: 150px;
+                                    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+                                    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+                                    -webkit-line-clamp: 1; /** 显示的行数 **/
+                                    overflow: hidden;  /** 隐藏超出的内容 **/
+                                    float:left;
+                                    font-size: 14px;
+                               }
+                           }
+                           .levance_front{
+                               float: left;
+                               margin: 0 0 0 8px;
+                           }
+                       }
+                       .bot{
+                           width:100%;
+                           float: left;
+                           padding: 1px 0 0 0;
+                           span{
+                               font-size: 12px;
+                               color: #757474;
+                               float:left;
+                               margin:0 10px 0 0;
+                               line-height: 14px;
+                               svg{
+                                   width: 14px;
+                                   height: 14px;
+                                   float:left;
+                                   margin:0 3px 0 0;
+                               }
+                           }
+                       }
+                   }    
+               }
+                
+               .taskicon{
+                white-space: nowrap;
+                vertical-align: middle;
+                display: inline-block;
+                margin-right: 0.2rem;
+                float: right;
+                height: 100%;
+                line-height: 100%;
+               }
+               .file_logo{
+                   svg{
+                       vertical-align: bottom;
+                   }
+               }
+               .file_logo_img{
+                   margin-right: 0.4rem;
+                   img{
+                    height: 1.5rem;
+                    width: 1.5rem;
+                   }
+                    svg{
+                        vertical-align: bottom;
+                        height: 1.5rem;
+                        width: 1.5rem;
+                    }
+               }
+               .leave_img{
+                display: inline-block;
+                width: 100%;
+                img{
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    flex: 0 0 50px;
+                    cursor: pointer;
+                }
+                svg{
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    flex: 0 0 50px;
+                    cursor: pointer;
+                }
+               }
+            }
+            .taskicon{
+                flex:0 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .log_icon{
+                color: #4FC5DC;
+                margin: 8px 7px 0 0;
+            }
+            .log_count{
+                color: #2a2a2a;
+                font-size: 13px;
+                margin:2px 0 0 0;
+            }
+            .levance_front{
+                font-size: 12px;
+                display: inline-block;
+                color: #fff;
+                margin-right: 0.2rem;
+                padding: 0 0.2rem;
+                background: #A988BD;
+                border-color: #A988BD;
+                border-radius: 4px;
+                height: 1rem;
+                line-height: 1rem;
+           }
+           .queen_front{
+            background: #F09A74;
+            border-color: #F09A74;
+           } 
+           .leave_front{
+            background: #F9635E;
+            border-color: #F9635E;
+           }
+        }
+    }
+}
+
+.am-modal-mask{
+    background-color: rgba(255, 0, 0, 0) !important;
+}

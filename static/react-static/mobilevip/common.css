@@ -1,0 +1,389 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  background: #eee;
+}
+
+body > div:first-of-type,
+body > div:first-of-type > #__next,
+body > div:first-of-type > #__next > div {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+div,
+ul,
+li,
+span,
+a,
+p {
+  font-family: "PingFang SC, Microsoft YaHei" !important;
+}
+body > div {
+  width: 0;
+  height: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 文字溢出出现三点 */
+.textMore {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: normal;
+  display: block;
+}
+
+/* 公共布局 样式 */
+.pubLayout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.pubLayout .menuBox {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 63px;
+  z-index: 2;
+}
+.pubLayout .content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 51px;
+}
+
+/* 公共阴影样式 */
+.pubDiv {
+  border: 1px solid #eaeaea;
+  box-shadow: 1px 1px 1px #eaeaea;
+  background: #fff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*面包屑*/
+.bread {
+  width: 100%;
+  color: #666;
+  background: #fff;
+  padding: 10px;
+}
+
+.bread span {
+  float: left;
+  font-size: 12px;
+  max-width: 250px;
+  color: #61caf6;
+}
+
+.bread svg {
+  float: left;
+  margin: -2px 2px 0 2px;
+  width: 18px;
+  height: 18px;
+}
+
+/*用户头像*/
+.user {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #5c6bc0;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.userNull {
+  background: #a8a8a8;
+}
+/* 
+.state_jxz {
+  background: #7bc653 !important;
+  opacity: 0.7;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_ywc {
+  background: #90a4ae !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_yyq {
+  background: #fdd835 !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_wzp {
+  background: #6a4eed !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_dqr {
+  background: #81d4fa !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_yzz {
+  background: #dbdbdb !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_tqwc {
+  background: #90a4ae !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_yqwc {
+  background: #90a4ae !important;
+  transform: scale(0.58);
+  color: #fff;
+} */
+.state_jxz {
+  background: #78c06e !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_ywc {
+  background: #5e97f6 !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_yyq {
+  background: #ff943e !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_wzp {
+  background: #9a89b9 !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_dqr {
+  background: #5ec9f6 !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_yzz {
+  background: #999999 !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_tqwc {
+  background: #38adff !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+.state_yqwc {
+  background: #5c6bc0 !important;
+  transform: scale(0.58);
+  color: #fff;
+}
+
+/*按钮反应 动画*/
+.aniBut-on {
+  background: #eee !important;
+}
+
+.aniBut-on-blue {
+  background: #43b5e4 !important;
+}
+
+.aniBut-on-white {
+  background: #f7fdff !important;
+}
+
+.aniBut-on-iBlue-tGray svg {
+  color: #15a8e5 !important;
+}
+
+.aniBut-on-iBlue-tGray span {
+  color: #000 !important;
+}
+
+/*公共下拉刷新样式*/
+.moreLoadingRow {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  color: #aeaeae;
+}
+
+/*标签样式 个人标签*/
+.tag_my01_fdbb78 {
+  background: #fdbb78 !important;
+  color: #fff !important;
+}
+.tag_my01_fdbb78 i {
+  color: #fff !important;
+}
+.tag_my02_f29b76 {
+  background: #f29b76 !important;
+  color: #fff !important;
+}
+.tag_my02_f29b76 i {
+  color: #fff !important;
+}
+.tag_my03_75ccff {
+  background: #74cbff !important;
+  color: #fff !important;
+}
+.tag_my03_75ccff i {
+  color: #fff !important;
+}
+.tag_my04_89c997 {
+  background: #88c896 !important;
+  color: #fff !important;
+}
+.tag_my04_89c997 i {
+  color: #fff !important;
+}
+.tag_my05_c8c4fc {
+  background: #b69cff !important;
+  color: #fff !important;
+}
+.tag_my05_c8c4fc i {
+  color: #fff !important;
+}
+.tag_my06_f5222d {
+  background: #4db8db !important;
+  color: #fff !important;
+}
+.tag_my06_f5222d i {
+  color: #fff !important;
+}
+.tag_my07_795548 {
+  background: #af9991 !important;
+  color: #fff !important;
+}
+.tag_my07_795548 i {
+  color: #fff !important;
+}
+.tag_my08_666666 {
+  background: #aeaeae !important;
+  color: #fff !important;
+}
+.tag_my08_666666 i {
+  color: #fff !important;
+}
+
+/*标签样式 公共标签*/
+.tag_all01_fdbb78 {
+  color: #fdbb78 !important;
+  background: rgba(253, 187, 120, 0.1) !important;
+  border-color: #fdbb78 !important;
+}
+.tag_all01_fdbb78 i {
+  color: #fdbb78 !important;
+}
+.tag_all02_f29b76 {
+  color: #f29b76 !important;
+  background: rgba(242, 155, 118, 0.1) !important;
+  border-color: #f29b76 !important;
+}
+.tag_all02_f29b76 i {
+  color: #f29b76 !important;
+}
+.tag_all03_75ccff {
+  color: #1890ff !important;
+  background: rgba(116, 203, 255, 0.1) !important;
+  border-color: #74cbff !important;
+}
+.tag_all03_75ccff i {
+  color: #1890ff !important;
+}
+.tag_all04_89c997 {
+  color: #52c41a !important;
+  background: rgba(136, 200, 150, 0.1) !important;
+  border-color: #88c896 !important;
+}
+.tag_all04_89c997 i {
+  color: #52c41a !important;
+}
+.tag_all05_c8c4fc {
+  color: #b69cff !important;
+  background: rgba(182, 156, 255, 0.1) !important;
+  border-color: #b69cff !important;
+}
+.tag_all05_c8c4fc i {
+  color: #fa541c !important;
+}
+.tag_all06_f5222d {
+  color: #4db8db !important;
+  background: rgba(77, 184, 219, 0.1) !important;
+  border-color: #4db8db !important;
+}
+.tag_all06_f5222d i {
+  color: #4db8db !important;
+}
+.tag_all07_795548 {
+  color: #795548 !important;
+  background: rgba(175, 153, 145, 0.1) !important;
+  border-color: #af9991 !important;
+}
+.tag_all07_795548 i {
+  color: #795548 !important;
+}
+.tag_all08_666666 {
+  color: #666666 !important;
+  background: rgba(174, 174, 174, 0.1) !important;
+  border-color: #aeaeae !important;
+}
+.tag_all08_666666 i {
+  color: #666666 !important;
+}
+
+/*-------------------------------------------------------------------------------------ants 组件样式修改-----------------------------------------------------------------------------------------------------------*/
+
+/* 选择器变下拉菜单 */
+.select {
+  width: auto;
+  color: #666;
+  line-height: 40px;
+}
+
+.select svg {
+  width: 13px;
+  height: 13px;
+  margin: 14px 0 0 4px;
+  float: left;
+}
+.select span {
+  font-size: 12px;
+  float: left;
+}
+
+/* 阿里巴巴多色图标 */
+.pro-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

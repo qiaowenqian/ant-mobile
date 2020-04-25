@@ -1,0 +1,158 @@
+.projectSelect{
+    background: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .am-search{
+        background: #fff;
+        padding: 0 10px;
+        flex:0 0 auto;
+        .am-search-input{
+            background: #f8f8f8;
+            .am-search-clear{
+                top: 7px;
+                right: 10px;
+            }
+        }
+    }
+    .am-search-start .am-search-synthetic-ph{
+        text-align: left;
+        width: 100px !important;
+    }
+    .list{
+        flex:1;
+        padding: 0 10px;
+        margin: 0 0 10px 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        li{
+            border-bottom: 1px solid #f8f8f8;
+            padding: 10px 0;
+            display: flex;
+            span{
+                color:#666666;
+                height: 22px;
+                line-height: 22px;
+                flex:1;
+                padding: 0 10px 0 0;
+            }
+            svg{
+                flex:0 0 auto;
+                color: #39adff;
+                float: right;
+            }
+        }
+        .p{
+            text-align: center;
+            display: inherit;
+            font-size: 12px;
+            color: #c7c7cc;
+            border: 0;
+            padding: 15px 0 0 0;
+            .load_loading{
+                width: 25px;
+                height: 25px;
+                min-height: auto;
+                position: inherit;
+                display: inline-block;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+    .bigBut{
+        background: #5ec9f6;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 14px;
+        flex:0 0 auto;
+    }
+    .bigButBox{
+        width: 100%;
+        height: 50px;
+        flex:0 0 auto;
+        box-shadow: 0 0 5px #c6c6c6;
+        .but{
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 14px;
+            width: 50%;
+            float: left;
+        }
+        .cal{
+            background: #fff;
+            color: #5ec9f6;
+        }
+        .ok{
+            background: #5ec9f6;
+            color: #fff;
+        }
+    }
+    
+    .alertModal{
+        position: absolute;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .modal{
+            width: 80%;
+            height: auto;
+            background: #fff;
+            border-radius: 5px;
+            padding: 0 0 15px 0;
+            .tit{
+                font-size: 15px;
+                color: #000;
+                height: 40px;
+                line-height: 45px;
+                text-align: center;
+            }
+            .am-list-item{
+                border: 1px solid #eeeeef;
+                height: 45px;
+                line-height: 45px;
+                color: #a9acb0;
+                font-size: 13px;
+                margin: 30px 15px 15px 15px;
+                border-radius: 5px;
+                padding: 0 10px;
+                .am-list-line{
+                    padding: 0;
+                    input{
+                        color: #a9acb0;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .am-button{
+                font-size: 13px;
+                margin: 0 15px 10px 15px;
+                border: 0;
+                box-shadow: none;
+                height: 40px;
+                line-height: 40px;
+            }
+            .am-button:before{
+                border: 0;
+            }
+            .am-button-primary{
+                background: #5ec9f6;
+            }
+        }
+    }
+}

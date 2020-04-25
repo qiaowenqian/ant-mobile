@@ -1,0 +1,62 @@
+.dingLoging {
+	width: 100%;
+	height: 100%;
+	.loadBox {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		.logoTop {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: nowrap;
+			img {
+				max-width: 90%;
+			}
+		}
+		.logoBott {
+			flex: 0 0 auto;
+			padding: 0 0 40px 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: nowrap;
+			img {
+				max-width: 50%;
+			}
+		}
+	}
+}
+
+.animate_text {
+	animation: textShow 1s ease 0s 1 normal forwards;
+	@keyframes textShow {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+.animate_logo {
+	animation: logoShow 1s ease 0s 1 normal forwards;
+	@keyframes logoShow {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
+.am-popover-mask {
+	display: none;
+}
+.am-popover {
+	display: none;
+}

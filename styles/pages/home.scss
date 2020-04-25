@@ -1,0 +1,216 @@
+/*
+$uiWidth:411px;
+@function px2Rem($px){
+    @return $uiWidth/23px/41.1*1rem;
+}*/
+
+
+
+.home{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    .question{
+        width:35px;
+        height:35px;
+        background:#108ee9;
+        text-align: center;
+        border-radius: 50%;
+        position:fixed;
+        right:20px;
+        bottom:230px;
+        color:#fff;
+        font-weight:600;
+        font:bold 16px/35px "微软雅黑";
+    }
+    .head{
+        height: auto;
+        width: 100%;
+        padding:10px 15px;
+        .head_box{
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #108ee9;
+            display: flex;
+            flex-flow: row nowrap;
+            .box{
+                position: relative;
+                border-right: 1PX solid #108ee9;
+                color: #108ee9;
+                text-align: center;
+                font-size: 12px;
+                line-height: 15px;
+                flex: auto;
+                padding: 7px 0;
+            }
+            .box:last-child{
+                border: 0;
+            }
+            .select{
+                background-color: #108ee9 !important;
+                color:#fff !important;
+                border: 0;
+            }
+        }
+        .am-segment{
+            background-color: #ffff;
+            .am-segment-item{
+                font-size: 12px;
+            }
+        }
+    }
+    .list_box{
+        height: 100%;
+        overflow: hidden;
+        padding: 0;
+        .am-accordion-header{
+            padding:0 15px;
+            height: 45px;
+            font-size: 16px;
+            line-height: 45px;
+            box-shadow: 3px 1px 1px #ccc;
+            font-weight: bold;
+            i{
+                top: 15px;
+                right: 15px;
+            }
+        }
+        .am-accordion-item{
+            margin-bottom: 5px;
+            .am-accordion-content{
+                border-top: 1px solid #efefef;
+                
+            }
+        }
+        .am-pull-to-refresh-indicator{
+            line-height: 1rem;
+        }
+        .panel_head{
+            span{
+                margin-left: 0.5rem;
+                font-size: 12px;
+            }
+        }
+        .loding{
+            margin-left: 0.5rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-top: 0.8rem;
+            float: right;
+            margin-right: 0.4rem;
+        }
+        .list{
+            height: auto;
+            overflow: auto;
+            padding: 0 0 10px 0;
+            width: 100%;
+            border: 0;
+            margin: 0;
+            .am-list{
+                width: 100% !important;
+                min-width: auto !important;
+                position: inherit !important;
+            }
+            .am-flexbox{
+                display: flex;
+                align-items: start;
+                padding: 2px 0 0 0;
+                .icon{
+                    flex: 0 0 auto;
+                    padding:7px 15px 0 0;
+                    svg{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .taskinfo_box{
+                    flex: 1;
+                }
+                .taskinfo_state{
+                    flex: 0 0 auto;
+                }
+            }
+            .list_box{
+                padding: 17px 15px;
+                border-bottom: 1px solid #ddd;
+                .icon{
+                }
+                .taskinfo_state{
+                    padding: 12px 0 0 10px;
+                    span{
+                        font-size: 12px !important;
+                    }
+                }
+                .taskinfo_box{
+                    .taskinfo_line{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        .number{
+                             vertical-align: super;
+                            flex:0 0 auto;
+                         }
+                        .title{
+                            flex:1;
+                            font-size: 14px;
+                            padding: 0 0 0 2px;
+                            display:block;
+                            max-width:215px;
+                            white-space:nowrap;
+                            text-overflow:ellipsis;
+                            overflow: hidden;
+                        }
+                        .userTxt{
+                            flex:0 0 77px !important;
+                        }
+                        .describe_box{
+                            flex:1;
+                            color: #B8B8B8;
+                            font-size: 12px;
+                            padding: 4px 15px 0 0;
+                            svg{
+                                width: 12px;
+                                height: 12px;
+                                color: #9599a2;
+                                float:left;
+                                margin:0 4px 0 0;
+                            }
+                            label{
+                                margin: 0 0 0 3px;
+                                color: #9599a2;
+                                display: block;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 1;
+                                overflow: hidden;
+                                max-width: 61px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                        .date{
+                            flex:0 0 auto;
+                            span{
+                                margin: 0 15px 0 0;
+                                color: #9599a2;
+                                font-size: 12px;
+                                line-height: 21px;
+                            }
+                            svg{
+                                width: 15px;
+                                height: 14px;
+                                color: #9599a2;
+                                float: left;
+                                margin: 4px 2px 0 0;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    } 
+    .list_box::before{
+        background: none;
+        height: 0;
+    } 
+}

@@ -1,0 +1,119 @@
+.stateChangeSuccess {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  &-content {
+    width: 100%;
+    height: calc(100% - 49px);
+    &-title {
+      padding: 16px;
+      width: 100%;
+      word-break: break-all;
+      line-height: 20px;
+      color: #212121;
+      span:nth-of-type(1) {
+        color: #bdbdbd;
+        margin-right: 4px;
+        font-size: 14px;
+      }
+      span {
+        color: #212121;
+      }
+    }
+    &-line {
+      border-top: solid 1px #f5f5f5;
+    }
+    &-line2 {
+      margin: 0 16px;
+      border-top: solid 1px #f5f5f5;
+    }
+    &-areatext {
+      padding: 8px 16px;
+      &-item {
+        .am-textarea-control {
+          padding: 0;
+          textarea {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    &-listinfo {
+      padding: 16px;
+      color: #64b5f6;
+      font-size: 14px;
+    }
+    &-listdetail {
+      padding: 0 16px;
+      .fileSection2 {
+        .fileItem:nth-of-type(1) {
+          margin-top: 0px;
+        }
+        .fileItem {
+          width: 100%;
+          color: rgba(117, 117, 117, 1);
+          font-size: 14px;
+          text-align: left;
+          margin-top: 6px;
+          border-radius: 2px;
+          background-color: rgba(250, 250, 250, 1);
+          color: #757575;
+          height: 32px;
+          border: 1px solid rgba(245, 245, 245, 1);
+          display: flex;
+          align-items: center;
+          position: relative;
+          .download {
+            width: 16px;
+            height: 16px;
+            margin-left: 8px;
+          }
+          .fileInfo {
+            margin-left: 4px;
+          }
+          .downloadOthers {
+            background: rgb(91, 174, 246);
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 8px;
+            div {
+              color: #fff;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-foot {
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    &-button {
+      width: 50%;
+      border-radius: 0;
+      height: 49px;
+      line-height: 49px;
+      font-size: 16px;
+    }
+    &-buttonLeft {
+      background: #f5f5f5;
+      color: #757575;
+    }
+    &-buttonRight {
+      background: #1e88e5;
+    }
+  }
+}
+.forbiddenCopy {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}

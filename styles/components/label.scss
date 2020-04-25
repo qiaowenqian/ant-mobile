@@ -1,0 +1,173 @@
+.labelModel{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    background: #eee;
+    flex-flow: column nowrap;
+    .label-list{
+        flex:1;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        >ul{
+            list-style-type:none;
+            padding: 0;
+            >h3{
+                padding: 0 15px;
+                margin: 0 0 7px 0;
+                font-size: 14px;
+                color: #212121;
+            }
+            >li{
+                background: #fff;
+                border-bottom: 1px solid #ddd;
+                padding: 0 15px;
+                font-size: 13px;
+                height: 35px;
+                line-height: 35px;
+                color: #000;
+                >svg{
+                    width: 15px;
+                    height: 15px;
+                    color: #108ee9;
+                    float: left;
+                    margin: 10px 5px 0 0;
+                }
+            }
+        }
+    }
+    .confirm-box{
+        flex:0 0 auto;
+        padding: 10px;
+        >a{
+            width: 49%;
+            float: left;
+            height: 35px;
+            line-height: 35px;
+            >span{
+                font-size: 13px;
+            }
+        }
+        >a:first-child{
+            margin: 0 1% 0 0;
+            border: 1PX solid #ddd;
+        }
+        >a:last-child{
+            margin: 0 0 0 1%;
+        }
+    }
+}
+
+.am-list-body::before{
+    height:0 !important;
+    background: none !important;
+}
+.label-main{
+    overflow: hidden;
+    .label-list{
+        overflow: auto;
+        -webkit-animation: poi-1F-EI_0 .3s;
+        animation: poi-1F-EI_0 .3s;
+        -webkit-overflow-scrolling: touch;
+        background-color: #eee;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 55px;
+        
+    }    
+    .am-list-header{
+        padding:0;
+        .label_p{
+            text-align: left;
+            padding: 10px 10px 3px 10px;
+            font-size: 14px;
+            color: #000 !important;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+            background: #eee;
+        }
+    }
+    .am-list-body{
+        .am-list-body{
+            margin-bottom: 1rem;
+            padding: 10px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            .am-list-item{
+                padding: 0;                
+                .am-list-thumb:first-child{
+                    margin: 0 5px 0 0;
+                }
+                .am-list-thumb .am-checkbox-inner{
+                    left: 0;
+                }
+            }  
+            >.am-list-item:last-child{
+                .am-list-line::after{
+                    background: none !important;
+                }
+            }          
+        }
+    }
+    
+    .list_box{
+        .am-list-item{
+            min-height:0px;
+        }
+        .am-checkbox-inner{
+            width: 13px !important;
+            height: 13px !important;
+            top: 10px !important;
+        }
+        .am-checkbox-inner:after{
+            top: -2px;
+            right: 1px;
+            width: 5px;
+            height: 10px;
+        }
+        .am-checkbox-input{
+            line-height: 1.5rem;
+            height: 1.5rem;
+        }
+        .am-list-line{
+            height: 2rem;
+            line-height: 2rem;
+        }        
+        .am-list-content{
+           font-size: 14px;
+        }
+    }
+    .confirm-box{
+        z-index: 99;
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        }
+        .cancel{
+            flex:0 0 48%;
+            height: 35px;
+            line-height: 35px;
+            display: inline-block;
+            padding: 0 20px;
+            margin: 0 1% 0 0;
+            font-size: 13px;
+        } 
+        .confirm{
+            margin: 0 0 0 1%;
+            flex:0 0 50%;
+            height: 35px;
+            line-height: 35px;
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 13px;
+        }
+}

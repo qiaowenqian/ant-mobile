@@ -1,0 +1,107 @@
+.add-project {
+	background: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 10px;
+	bottom: 0;
+	box-shadow: 0 0 5px #ccc;
+
+	.am-list-body > .am-list-item:first-of-type .am-list-content {
+		padding: 0 !important;
+	}
+	.am-switch input[type="checkbox"]:checked + .checkbox {
+		background: #108ee9;
+	}
+	.button-box {
+		.am-button-ghost::before {
+			border: 0;
+		}
+		.am-button-small {
+			font-size: 14px;
+			padding: 0 8px;
+			width: 52px;
+			height: 28px;
+		}
+	}
+	.am-list-line::after {
+		display: none !important;
+	}
+	.am-list-item {
+		padding: 0;
+		border-bottom: 1px solid #ddd !important;
+		min-height: 50px;
+		.am-list-item {
+			border: 0 !important;
+		}
+		.am-input-control {
+			padding: 0 15px;
+			input {
+				font-size: 16px;
+				line-height: 37px;
+				height: 37px;
+				padding: 0;
+			}
+		}
+		.am-list-line {
+			padding: 0;
+			.am-list-content {
+				padding: 0 0 0 15px;
+				font-size: 16px;
+			}
+			.am-list-extra {
+				padding: 0 15px 0 0;
+				font-size: 14px;
+			}
+		}
+	}
+	.list {
+		background-color: #ffffff;
+		.title {
+			color: #000;
+			line-height: 33px;
+			.message {
+				font-size: 0.25rem;
+				color: #a7aaa6;
+			}
+		}
+		.action {
+			float: right;
+			margin: 1px 10px 0 0;
+		}
+		.separator {
+			background-color: #f5f5f9;
+			height: 0.1rem;
+			min-height: 0.1rem;
+			border-top: 1px solid #ececed;
+			border-bottom: 1px solid #ececed;
+			box-shadow: 0 -2px 6px #d9d9d9;
+		}
+	}
+	.button-box {
+		margin: 10px 15px;
+		.button-right {
+			float: right;
+		}
+	}
+	.box_align {
+		.am-input-label {
+			margin-left: 0.4rem;
+		}
+	}
+}
+
+.feedTextarea textarea {
+	height: auto !important;
+	font-size: 14px;
+}
+
+.feedEmail {
+	.am-input-control {
+		padding: 0 !important;
+		input {
+			vertical-align: middle;
+			line-height: normal !important; /* for non-ie */
+		}
+	}
+}

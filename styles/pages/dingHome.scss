@@ -1,0 +1,193 @@
+.dingHome {
+  -webkit-overflow-scrolling: touch;
+  .textMore {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .dingHomeTopSection {
+    height: calc(100% - 63px);
+    overflow-y: auto;
+  }
+  .dingHome-main1 {
+    width: 100%;
+    height: 144px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .dingHomeBg {
+    height: 91px;
+    background: linear-gradient(
+      180deg,
+      rgba(156, 205, 255, 1) 0%,
+      rgba(99, 158, 253, 1) 100%
+    );
+    width: 100%;
+    position: relative;
+  }
+
+  .trapleft {
+    width: 0;
+    height: 0;
+    border-top: 8px solid rgba(99, 158, 253, 1);
+    border-left: 16px solid transparent;
+    border-right: 0 solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+  }
+
+  .trapright {
+    width: 0;
+    height: 0;
+    border-top: 8px solid rgba(99, 158, 253, 1);
+    border-left: 0 solid transparent;
+    border-right: 16px solid transparent;
+    right: 0;
+    bottom: -8px;
+    position: absolute;
+  }
+
+  .dingsection1 {
+    width: calc(100% - 32px);
+    position: absolute;
+    height: 120px;
+    left: 16px;
+    top: 25px;
+    padding: 0 16px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+  }
+
+  .dingHome-number {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .dingHome-number-title {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(43, 44, 45, 1);
+  }
+
+  .dingHome-number-box {
+    width: 33%;
+    display: inline-block;
+    /* height: 112rpx; */
+  }
+
+  .dingHome-number-top {
+    height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #79828c;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .dingHome-number-bottom {
+    width: 100%;
+    height: 34px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #53d392;
+    line-height: 34px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .dingHome-main2 {
+    padding: 0 16px;
+    position: relative;
+  }
+  .dingHome-title {
+    padding: 0 16px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dinghome-tabs-item {
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #c4c8cd;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    color: #79828c;
+  }
+  .dinghome-tabs-item.right {
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+  }
+  .dinghome-tabs-item.left {
+    border-radius: 4px 0px 0px 4px;
+    border-right: none;
+  }
+  .dinghome-tabs-item.active {
+    border: 1px solid rgba(99, 158, 253, 1);
+    color: rgba(99, 158, 253, 1);
+  }
+  .home-statistic {
+    height: 233px;
+    padding: 0 12px;
+    margin-bottom: 8px;
+    background: #fff;
+  }
+
+  .daiqueren {
+    color: #68b6ff;
+  }
+
+  .daizhipai {
+    color: #c783f2;
+  }
+
+  .homechart {
+    margin: 0 16px 16px 16px;
+    background: #fff;
+    border-radius: 4px;
+    .chartTitle {
+      padding: 0 16px;
+      height: 50px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+      .chartTitleLeft {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(43, 44, 45, 1);
+      }
+    }
+    .chartChartCavans {
+      height: 246px;
+      width: 100%;
+      background: #fff;
+      position: relative;
+      .chartNull {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.am-popover-mask {
+  display: none;
+}
+.am-popover {
+  display: none;
+}
+

@@ -1,0 +1,145 @@
+.update-main{
+    background-color: #ffffff;
+    padding: 10px 15px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    .am-list-body{
+        height: 100%;
+        box-sizing: border-box;
+        .am-list-item{
+            height: 100%;
+            padding: 0;
+            box-sizing: border-box;
+            .am-list-line{
+                height: 100%;
+                box-sizing: border-box;
+                padding: 0;
+                .am-list-content{
+                    padding: 10px 0 0 0;
+                    height: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .am-flexbox-align-center{
+            padding: 10px 0 0 0;
+            input{
+                padding: 10px 10px;
+            }
+        }
+    }   
+      
+    .am-list-body::after{
+        background: none !important;
+    }
+    .list{
+        padding: 0;
+        flex:1;
+        .title{
+            line-height: 1rem;
+            color: #000;
+            width: 25%;
+            display: inline-block;
+            .message{
+                font-size: 0.25rem;
+                color: #A7AAA6;
+            }
+            .right{
+                float: right;
+            }
+            .am-list-line{
+            .am-list-extra{
+                margin-right: 0.2rem;
+            }
+        }         
+     }
+     .width100{
+        width: 100%;
+    }    
+      .action{
+            float: right;
+            flex: 1;
+            height: 3rem;
+            line-height: 3rem;
+            .am-list-item{
+                width: 90%;
+                display: inline-block;
+                height: 95%;
+                .am-input-control{
+                    height: 2.5rem;
+                    line-height: 2.5rem;
+                }
+                input{
+                    text-align:right;
+                }
+            }
+                .user{
+                    color: #9E9E9E;
+                    margin-right: 0.1rem;
+                }
+                .am-list-item{
+                    padding: 0rem; 
+                }
+            }
+    .message{
+        color: #a9a9a9;
+        font-size: 0.8rem;
+    }
+    .icon_detail{
+                display: inline-block;
+                min-height: 1rem;
+                p{
+                    width:100%;
+                }
+    }
+    .textarea{
+        color: #000;
+        font-size: 14px;
+        line-height: 17px;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 0;
+        background: #ececec;
+        border-radius: 5px;
+        overflow: visible;
+        display: block;
+        resize: none;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+    .input{
+        color: #000;
+        font-size: 17px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        border: 0;
+        line-height: 1;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }                    
+}
+    .button-box{
+        padding: 0 0 9px 0;
+        flex:0 0 auto;
+        justify-content: space-between;
+        .button-right{
+            float:right
+        }
+        a{
+            width:52px;
+            height:28px;
+            display:inline-block;
+            span{
+                display:block;
+                margin-left:-2px;
+            }
+        }
+    }
+}

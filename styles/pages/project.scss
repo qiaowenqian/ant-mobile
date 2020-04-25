@@ -1,0 +1,360 @@
+.project {
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  .createProject {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    z-index: 99;
+    width: 34px;
+    height: 34px;
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  .proTop {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    // padding:0 15px;
+    .am-tabs-bottom,
+    .am-tabs-top {
+      width: 90%;
+    }
+    .proTop_one {
+      flex: 0 0 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      > div {
+        flex: 0 0 auto;
+        align-items: flex-start;
+        margin: 0 20px 0 0;
+        font-size: 12px;
+        color: #666;
+      }
+      .projectType {
+        display: flex;
+        align-items: center;
+        svg {
+          width: 13px;
+          height: 13px;
+          margin: 0 0 0 4px;
+        }
+      }
+      .pro {
+        flex: 1;
+        text-align: center;
+        line-height: 40px;
+        font-size: 12px;
+        color: #666;
+        span {
+          font-size: 12px;
+        }
+      }
+      .pro:last-child {
+        flex: 2;
+      }
+    }
+    .tagBox {
+      flex: 0 0 auto;
+      display: flex;
+      padding: 0 0 8px 0;
+      > span {
+        font-size: 12px;
+        display: inline-block;
+        color: #666;
+        line-height: 20px;
+        padding: 0 6px 0 0;
+      }
+      ul {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          border-radius: 5px;
+          align-items: center;
+          font-size: 12px;
+          float: left;
+          margin: 0 5px 3px 0;
+          padding: 3px 5px;
+          border: 1px solid;
+          span {
+            float: left;
+            max-width: 75px;
+          }
+          svg {
+            width: 12px;
+            height: 12px;
+            float: left;
+          }
+        }
+      }
+    }
+  }
+  .listAnimate {
+    animation: listMove 0.5s ease 0s 1 normal forwards;
+  }
+  @keyframes listMove {
+    100% {
+      top: 50px;
+    }
+  }
+  .topScrollLoadIcon {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 30px;
+    z-index: 0;
+    text-align: center;
+    color: #ccc;
+  }
+
+  .proContent {
+    // padding: 0 10px;
+    margin: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #eee;
+    // position: absolute;
+    // top: 90px;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // z-index: 1;
+    .am-list-body {
+      background: none;
+      border: none;
+    }
+    .projectBox {
+      background: #fff;
+      position: relative;
+      padding: 12px;
+      margin: 0 16px 8px 16px;
+      // height: 109px;
+      border-radius: 4px;
+      box-shadow: 0 0 2px #e0e3e7;
+      .left {
+        width: 51px;
+        float: left;
+        svg {
+          width: 51px;
+          height: 51px;
+        }
+        .pro-icon-null {
+          width: 51px;
+          height: 51px;
+          background: rgba(164, 199, 253, 1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .center {
+        // position: absolute;
+        // left: 60px;
+        // right: 60px;
+        float: left;
+        padding-left: 8px;
+        height: 51px;
+        width: calc(100% - 51px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .h3 {
+          width: calc(100% - 40px);
+          height: 25px;
+          font-size: 14px;
+          font-weight: 500;
+          color: rgba(58, 58, 58, 1);
+          line-height: 25px;
+        }
+        .labels {
+          // padding: 5px 0 15px 0;
+          display: flex;
+          label {
+            border: 1px solid;
+            border-radius: 3px;
+            font-size: 12px;
+            padding: 2px 9px;
+            margin: 0 8px 0 0;
+            color: #a0a0a0;
+            border: 1px solid #f0f0f0;
+            background: #f8f8f8;
+            max-width: 80px;
+            min-width: 50px;
+            display: inline-block;
+            text-align: center;
+          }
+        }
+        .text {
+          display: flex;
+          line-height: 16px;
+          .progress {
+            color: #858585;
+            font-size: 12px;
+            flex: 0 0 76px;
+
+            span {
+              color: #fd9036;
+              font-size: 22px;
+            }
+            label {
+              font-size: 14px;
+            }
+          }
+          .task {
+            color: #999999;
+            font-size: 12px;
+            flex: 1;
+            text-align: center;
+            span {
+              color: #5b6bc0;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .bottom {
+        margin-top: 12px;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        .desc {
+          flex: 1;
+          height: 24px;
+          line-height: 24px;
+          color: #999ca1;
+          font-size: 12px;
+          .color_tt_4 {
+            color: rgb(99, 158, 253);
+          }
+          .yq {
+            color: rgba(255, 158, 3, 1);
+          }
+        }
+        .userRightBox {
+          height: 24px;
+          width: 65px;
+          display: flex;
+          margin-bottom: 3px;
+          .userImg {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 4px;
+            display: inline-block;
+          }
+          .userName {
+            font-size: 12px;
+            text-align: left;
+            width: 37px;
+            display: inline-block;
+            color: rgb(58, 58, 58);
+            line-height: 24px;
+          }
+        }
+      }
+      .progress {
+        width: 100%;
+        display: flex;
+        height: 3px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        border-radius: 1.5px;
+      }
+      .progressColor {
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        width: 0%;
+        background: #fff;
+        animation: antOpacity 2s 1s infinite;
+      }
+      .right {
+        width: 45px;
+        position: absolute;
+        text-align: right;
+        right: 12px;
+        top: 12px;
+        svg {
+          color: #a2a2a2;
+        }
+        .colled {
+          color: #fbbe07;
+        }
+      }
+    }
+    .p {
+      text-align: center;
+      font-size: 12px;
+      color: #a9b5b9;
+      height: 20px;
+      line-height: 20px;
+      .load_loading {
+        position: inherit;
+        display: inline-block;
+        width: auto;
+        height: 20px;
+        min-height: 20px;
+        background: none;
+        margin: 1px 10px 0 0;
+      }
+    }
+  }
+  .am-search-clear-show {
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+}
+.projectSort {
+  .am-drawer-overlay {
+    z-index: 100;
+    margin-top: 90px;
+  }
+  .am-drawer-sidebar {
+    z-index: 101;
+    margin-top: 90px;
+  }
+  .am-search-synthetic-ph-placeholder {
+    width: 130px !important;
+  }
+  .am-search-synthetic-ph {
+    width: 130px !important;
+  }
+}
+.projectSort.am-drawer.am-drawer-right {
+  .am-drawer-draghandle {
+    width: 0;
+  }
+}
+html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab:after {
+  width: 0;
+}
+.am-drawer.am-drawer-left .am-drawer-draghandle,
+.am-drawer.am-drawer-right .am-drawer-draghandle {
+  width: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@keyframes antOpacity {
+  from {
+    opacity: 0.5;
+    width: 0%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+.am-list-view-scrollview-content{
+  max-width: 100%;
+}

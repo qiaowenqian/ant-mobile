@@ -1,0 +1,192 @@
+.creaProject{
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+    .am-list-body{
+        background:transparent;
+    }
+    .projectcount{
+        width:100%;
+        height:54px;
+        line-height:54px;
+        background:#fff;
+        border-radius:5px;
+        display:flex;
+        margin:0 0 10px 0;
+        .projectName{
+            flex:5;
+            height:100%;
+            border:none;
+            border-top-left-radius:8px;
+            border-bottom-left-radius:8px;
+            .am-list-line{
+                border:none;
+            }
+        }
+        .count{
+            color:#f64a4b;
+            font-size:12px;
+            flex:.2;
+            text-align: right;
+        }
+        .countEnd{
+            color:#c7c7cc;
+            font-style:normal;
+            flex:0 0 auto;
+            font-size:12px;
+            padding-right:15px;
+        }
+        .am-list-item .am-input-control input{
+            font-size:14px;
+            color:#666;
+        }
+        .am-list-item .am-input-control input::-webkit-input-placeholder{
+            color:#c7c7cc;
+        }
+    }
+    .textareacount{
+        width:100%;
+        height:150px;
+        border-radius:5px;
+        position:relative;
+        margin:0 0 10px 0;
+        .textarea{
+            border-radius:5px;
+            height:100%;
+            .am-textarea-control{
+                textarea{
+                    font-size:14px;
+                    color:#666;
+                    height:117px;
+                }
+                textarea::-webkit-input-placeholder{
+                    color:#c7c7cc;
+                }
+            }
+            .am-textarea-count{
+                color: #c7c7cc;
+                bottom: 0;
+                left: 15px;
+                right: 15px;
+                width: auto;
+                padding: 0;
+            }
+            >span{
+                display:block;
+                width:100%;
+                text-align: right;
+                height:33px;
+                line-height:33px;
+                padding-right:15px;
+                font-size:12px;
+                border-top:1px solid #f8f8f8;
+                padding:0 15px;
+                span{
+                     color:#f64a4b;
+                }
+            }
+        }
+    }
+    .power{
+        width:100%;
+        background:#fff;
+        border-radius:5px;
+        padding:0 15px;
+        margin:0 0 10px 0;
+        svg{
+            width:18px;
+            height:18px;
+            color:#c7c7cc;
+        }
+        .am-list-content{
+            color:#c7c7cc;
+            font-size:14px;
+        }
+        .am-list-extra{
+            font-size:14px;
+            color:#666;
+        }
+        .am-list-arrow{
+            width:12px;
+            height:12px;
+        }
+        .am-list-item .am-list-line{
+            padding-right:2px;
+            border:none;
+        }
+    }
+    .person{
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 0 15px;
+        display: flex;
+        border-radius: 5px;
+        margin: 0 0 10px 0;
+        line-height: inherit;
+        svg{
+            width:18px;
+            height:18px;
+            flex:0 0 20px;
+            color:#c7c7cc;
+        }
+        .title{
+            font-size:14px;
+            color:#c7c7cc;
+            flex:0 0 60px;
+            padding-left:15px;
+            line-height:44px;
+        }
+        .action{
+            flex: 1;
+            text-align: right;
+            padding: 0 0 5px 0;
+            span{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #5c6bc0;
+                color: #fff;
+                line-height: 30px;
+                font-size: 12px;
+                text-align: center;
+                overflow: hidden;
+                float: inherit;
+                margin: 6px 0 0 5px;
+            }            
+        }
+        .iconSvg{
+            flex:0 0 auto;
+            svg{
+                width:20px;
+                height:20px;
+                color:#c7c7cc;
+            }
+        }
+    }
+}
+.save-project{
+    width:100%;
+    height:50px;
+    background:#5ec9f6;
+    font-size:15px;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    text-align: center;
+    line-height:50px;
+}
+.save-noproject{
+    width:100%;
+    height:50px;
+    background:#c7c7cc;
+    font-size:15px;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    text-align: center;
+    line-height:50px;
+}
+html:not([data-scale]) .am-list-body div:not(:last-child) .am-list-line:after{
+    height:0;
+}

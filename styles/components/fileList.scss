@@ -1,0 +1,26 @@
+
+     .file_boxs{
+        max-height:300px;
+        flex:1;
+        .file_list{
+            line-height: 1.5rem;
+            height: 1.5rem;
+            flex: 1;
+            color: #333;
+            img{
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.4rem;
+            }
+            .headline{
+                width: 70%;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-right: 0.4rem;
+                line-height: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
