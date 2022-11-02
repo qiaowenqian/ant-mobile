@@ -33,7 +33,7 @@
     "react-dom": "^15.6.1",
     "react-fastclick": "^3.0.2",
     "react-flexible": "^1.0.7",
-    "react-native": "^0.54.2",
+    "react-native": "^0.70.4",
     "react-native-image-gallery": "^2.1.5",
     "react-native-image-zoom-viewer": "^2.1.0",
     "react-redux": "^5.0.1",
